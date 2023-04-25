@@ -1,0 +1,70 @@
+<div class="testimonial-wrap">
+          <div class="containerGlobal">
+            <div class="sectionStyles_sectionHeadWrapNew__3t3yd">
+              <div class="sectionStyles_sectionHeadInner__32Qxo"><h2 class="  text-left" style="margin-bottom:">Clients
+                Testimonial</h2>
+                <p class=" custom-font-18   text-left"></p></div>
+            </div>
+            <div class="slick-slider slick-initialized" dir="ltr">
+              <div class="slick-arrow slick-prev" style="display:block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" (click)="changePreviousSlide()">
+                  <g data-name="Group 37195">
+                    <g data-name="Ellipse 514" fill="#fff" stroke="#162441">
+                      <circle cx="26" cy="26" r="26" stroke="none"></circle>
+                      <circle cx="26" cy="26" r="25.5" fill="none"></circle>
+                    </g>
+                    <path
+                      d="M20.501 36.978a1.5 1.5 0 01.44-1.06l7.672-7.672a2.5 2.5 0 000-3.536l-7.662-7.667a1.5 1.5 0 012.121-2.121l7.662 7.661a5.506 5.506 0 010 7.779l-7.672 7.672a1.5 1.5 0 01-2.561-1.056z"
+                      fill="#162441" stroke="#fff"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="slick-list">
+                <div class="slick-track" style="width: 5140px; opacity: 1; transform: translate3d(-1028px, 0px, 0px);">
+                  <div class="slick-slide slick-cloned"  style="width: 1028px;">
+                    <div>
+                      <div style="width:100%;display:inline-block">
+                        <div class="testimonialWrap">
+                          <div class="testimonialImage"><img
+                            src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/landingPage/testonomial/rose.webp"
+                            height="371px" width="275px" class="lazyload" alt="Rose H"></div>
+                          <div class="testimonialContent">
+                            <p class="custom-font-18 taj">It's rewarding to work with a
+                            diligent and dedicated team. Excellent guys to work with! Always listened to my thoughts and
+                            came up with creative design solutions. Whenever you need them, they are available and eager
+                            to share their knowledge. </p>
+                            <h3>- Rose H.</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slick-slide slick-active slick-current" style="outline: none; width: 1028px;">
+                    <div *ngFor="let testimonial of testimonialData">
+                      <div style="width:100%;display:inline-block" *ngIf="activeId === testimonial.id">
+                        <div class="testimonialWrap">
+                          <div class="testimonialImage">
+                            <img [src]="testimonial.image" height="371px" width="275px" class="lazyload" alt="Ben T">
+                          </div>
+                          <div class="testimonialContent" [innerHTML]="testimonial.content">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slick-arrow slick-next" style="display:block">
+                <svg data-name="Group 37196" xmlns="http://www.w3.org/2000/svg" width="52" height="52" (click)="changeNextSlide()">
+                  <g data-name="Ellipse 514" fill="#fff" stroke="#162441">
+                    <circle cx="26" cy="26" r="26" stroke="none" ></circle>
+                    <circle cx="26" cy="26" r="25.5" fill="none" ></circle>
+                  </g>
+                  <path
+                    d="M31.499 36.978a1.5 1.5 0 00-.44-1.06l-7.672-7.672a2.5 2.5 0 010-3.536l7.662-7.667a1.5 1.5 0 00-2.121-2.121l-7.662 7.661a5.506 5.506 0 000 7.779l7.672 7.672a1.5 1.5 0 002.561-1.056z"
+                    fill="#162441" stroke="#fff"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>

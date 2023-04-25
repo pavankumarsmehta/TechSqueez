@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="79.5" viewBox="0 0 53 79.5">
+  <g id="Group_39417" data-name="Group 39417" transform="translate(-295 -2220.532)">
+    <g id="figma.9356ed1b" transform="translate(295 2220.532)">
+      <path id="Path_34315" data-name="Path 34315" d="M13.331,59.33A13.336,13.336,0,0,0,26.663,46V32.667H13.331a13.331,13.331,0,0,0,0,26.663Z" transform="translate(0 20.17)" fill="#0ec878"/>
+      <path id="Path_34316" data-name="Path 34316" d="M0,29.665A13.336,13.336,0,0,1,13.331,16.333H26.663V43H13.331A13.336,13.336,0,0,1,0,29.665Z" transform="translate(0 10.085)" fill="#974fff"/>
+      <path id="Path_34317" data-name="Path 34317" d="M0,13.331A13.336,13.336,0,0,1,13.331,0H26.663V26.663H13.331A13.336,13.336,0,0,1,0,13.331Z" fill="#f0441c"/>
+      <path id="Path_34318" data-name="Path 34318" d="M16.334,0H29.665a13.331,13.331,0,1,1,0,26.663H16.334Z" transform="translate(10.003)" fill="#ff6657"/>
+      <path id="Path_34319" data-name="Path 34319" d="M43,29.665A13.331,13.331,0,1,1,29.665,16.333,13.336,13.336,0,0,1,43,29.665Z" transform="translate(10.003 10.085)" fill="#18b4fe"/>
+    </g>
+  </g>
+</svg>
