@@ -4,8 +4,6 @@ import {HomeComponent} from "./pages/home/home.component";
 import {MainDevelopersComponent} from "./pages/main-developers/main-developers.component";
 import {MainSolutionsComponent} from "./pages/main-solutions/main-solutions.component";
 import {MainIndustriesComponent} from "./pages/main-industries/main-industries.component";
-import {MainPortfolioComponent} from "./pages/main-portfolio/main-portfolio.component";
-import {MainBlogsComponent} from "./pages/main-blogs/main-blogs.component";
 import {MainAboutUsComponent} from "./pages/main-about-us/main-about-us.component";
 import {MainCareerComponent} from "./pages/main-career/main-career.component";
 import {MainContactUsComponent} from "./pages/main-contact-us/main-contact-us.component";
@@ -17,13 +15,6 @@ import {HireDeveloperComponent} from "./pages/main-developers/hire-developer/hir
 import {CMSServicesComponent} from "./pages/main-services/cms-services/cms-services.component";
 import {FrontendServicesComponent} from "./pages/main-services/frontend-services/frontend-services.component";
 import {BackendServicesComponent} from "./pages/main-services/backend-services/backend-services.component";
-import {GroceryStoreAppComponent} from "./pages/main-solutions/grocery-store-app/grocery-store-app.component";
-import {FoodDeliveryAppComponent} from "./pages/main-solutions/food-delivery-app/food-delivery-app.component";
-import {DigitalWalletAppComponent} from "./pages/main-solutions/digital-wallet-app/digital-wallet-app.component";
-import {ELearningAppComponent} from "./pages/main-solutions/e-learning-app/e-learning-app.component";
-import {OnDemandSolutionsComponent} from "./pages/main-solutions/on-demand-solutions/on-demand-solutions.component";
-import {ECommerceFashionStoreComponent} from "./pages/main-solutions/e-commerce-fashion-store/e-commerce-fashion-store.component";
-import {MarketplaceAppSolutionsComponent} from "./pages/main-solutions/marketplace-app-solutions/marketplace-app-solutions.component";
 import {SolutionsComponent} from "./pages/main-solutions/solutions/solutions.component";
 
 
@@ -33,8 +24,6 @@ const routes: Routes = [
   { path: 'our-services', component: MainServicesComponent },
   { path: 'solutions', component: MainSolutionsComponent },
   { path: 'industries', component: MainIndustriesComponent },
-  { path: 'portfolio', component: MainPortfolioComponent },
-  { path: 'blogs', component: MainBlogsComponent },
   { path: 'about-us', component: MainAboutUsComponent },
   { path: 'careers', component: MainCareerComponent },
   { path: 'contact-us', component: MainContactUsComponent },
@@ -50,17 +39,6 @@ const routes: Routes = [
   { path: 'hire-full-stack-developer', component: HireDeveloperComponent },
   { path: 'hire-front-end-developer', component: HireDeveloperComponent },
   { path: 'hire-back-end-developer', component: HireDeveloperComponent },
-
-
-  /*{ path: 'grocery-delivery-app-development', component: GroceryStoreAppComponent },
-  { path: 'food-delivery-app-development', component: FoodDeliveryAppComponent },
-  { path: 'on-demand-app-development', component: OnDemandSolutionsComponent },
-  { path: 'fashion-ecommerce-app-development', component: ECommerceFashionStoreComponent },
-  { path: 'digital-wallet-development', component: DigitalWalletAppComponent },
-  { path: 'elearning-app-development', component: ELearningAppComponent },
-  { path: 'marketplace-app-development', component: MarketplaceAppSolutionsComponent },*/
-
-
   { path: 'grocery-delivery-app-development', component: SolutionsComponent },
   { path: 'food-delivery-app-development', component: SolutionsComponent },
   { path: 'on-demand-app-development', component: SolutionsComponent },
