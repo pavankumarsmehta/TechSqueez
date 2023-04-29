@@ -42,6 +42,7 @@ import { ECommerceFashionStoreComponent } from './pages/main-solutions/e-commerc
 import { MarketplaceAppSolutionsComponent } from './pages/main-solutions/marketplace-app-solutions/marketplace-app-solutions.component';
 import { ToolsAndTechComponent } from './common/tools-and-tech/tools-and-tech.component';
 import { HireDeveloperComponent } from './pages/main-developers/hire-developer/hire-developer.component';
+import { SolutionsComponent } from './pages/main-solutions/solutions/solutions.component';
 
 
 @NgModule({
@@ -85,7 +86,8 @@ import { HireDeveloperComponent } from './pages/main-developers/hire-developer/h
     ECommerceFashionStoreComponent,
     MarketplaceAppSolutionsComponent,
     ToolsAndTechComponent,
-    HireDeveloperComponent
+    HireDeveloperComponent,
+    SolutionsComponent
   ],
   imports: [
     BrowserModule,

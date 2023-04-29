@@ -17,6 +17,14 @@ import {HireDeveloperComponent} from "./pages/main-developers/hire-developer/hir
 import {CMSServicesComponent} from "./pages/main-services/cms-services/cms-services.component";
 import {FrontendServicesComponent} from "./pages/main-services/frontend-services/frontend-services.component";
 import {BackendServicesComponent} from "./pages/main-services/backend-services/backend-services.component";
+import {GroceryStoreAppComponent} from "./pages/main-solutions/grocery-store-app/grocery-store-app.component";
+import {FoodDeliveryAppComponent} from "./pages/main-solutions/food-delivery-app/food-delivery-app.component";
+import {DigitalWalletAppComponent} from "./pages/main-solutions/digital-wallet-app/digital-wallet-app.component";
+import {ELearningAppComponent} from "./pages/main-solutions/e-learning-app/e-learning-app.component";
+import {OnDemandSolutionsComponent} from "./pages/main-solutions/on-demand-solutions/on-demand-solutions.component";
+import {ECommerceFashionStoreComponent} from "./pages/main-solutions/e-commerce-fashion-store/e-commerce-fashion-store.component";
+import {MarketplaceAppSolutionsComponent} from "./pages/main-solutions/marketplace-app-solutions/marketplace-app-solutions.component";
+import {SolutionsComponent} from "./pages/main-solutions/solutions/solutions.component";
 
 
 const routes: Routes = [
@@ -42,6 +50,31 @@ const routes: Routes = [
   { path: 'hire-full-stack-developer', component: HireDeveloperComponent },
   { path: 'hire-front-end-developer', component: HireDeveloperComponent },
   { path: 'hire-back-end-developer', component: HireDeveloperComponent },
+
+
+  /*{ path: 'grocery-delivery-app-development', component: GroceryStoreAppComponent },
+  { path: 'food-delivery-app-development', component: FoodDeliveryAppComponent },
+  { path: 'on-demand-app-development', component: OnDemandSolutionsComponent },
+  { path: 'fashion-ecommerce-app-development', component: ECommerceFashionStoreComponent },
+  { path: 'digital-wallet-development', component: DigitalWalletAppComponent },
+  { path: 'elearning-app-development', component: ELearningAppComponent },
+  { path: 'marketplace-app-development', component: MarketplaceAppSolutionsComponent },*/
+
+
+  { path: 'grocery-delivery-app-development', component: SolutionsComponent },
+  { path: 'food-delivery-app-development', component: SolutionsComponent },
+  { path: 'on-demand-app-development', component: SolutionsComponent },
+  { path: 'fashion-ecommerce-app-development', component: SolutionsComponent },
+  { path: 'digital-wallet-development', component: SolutionsComponent },
+  { path: 'elearning-app-development', component: SolutionsComponent },
+  { path: 'marketplace-app-development', component: SolutionsComponent },
+  { path: 'dating-app-development', component: SolutionsComponent },
+  { path: 'salon-and-beauty-app-development', component: SolutionsComponent },
+  { path: 'hotel-booking-app-development', component: SolutionsComponent },
+  { path: 'taxi-booking-app-development', component: SolutionsComponent },
+  { path: 'event-and-ticket-booking-solutions', component: SolutionsComponent },
+  { path: 'taxi-booking-app-development', component: SolutionsComponent },
+  { path: 'restaurant-app-development', component: SolutionsComponent },
 ];
 
 @NgModule({
