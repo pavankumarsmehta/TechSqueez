@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="Group_39462" data-name="Group 39462" transform="translate(-3495.652 -2505.652)">
+    <g id="Group_39457" data-name="Group 39457" transform="translate(3496 2506)">
+      <rect id="Rectangle_12961" data-name="Rectangle 12961" width="72" height="72" transform="translate(-0.348 -0.348)" fill="none"/>
+    </g>
+    <g id="vscode-icons_file-type-flutter" transform="translate(3503.13 2506)">
+      <path id="Path_106185" data-name="Path 106185" d="M15.383,23.523l8.706-8.481H45.716L26.558,34.2Z" transform="translate(11.753 17.997)" fill="#40d0fd"/>
+      <path id="Path_106186" data-name="Path 106186" d="M4.907,38.132,15.784,49.268,62.376,2.287H40.749Z" transform="translate(-4.907 -2.287)" fill="#41d0fd"/>
+      <path id="Path_106187" data-name="Path 106187" d="M11.176,29.1,22.208,39.969l11.04-10.975L22.073,18.316,11.176,29.1Z" transform="translate(5.063 23.205)" fill="#1fbcfd"/>
+      <path id="Path_106188" data-name="Path 106188" d="M15.435,33.414l11.04-10.975,18.889,19.1H23.615l-8.18-8.128Z" transform="translate(11.836 29.76)" fill="#095a9d"/>
+      <path id="Path_106189" data-name="Path 106189" d="M15.435,30.838l10.286-3.422-3.466-3.36-6.82,6.781Z" transform="translate(11.836 32.333)" fill="#0e5199"/>
+    </g>
+  </g>
+</svg>
