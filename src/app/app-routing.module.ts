@@ -16,6 +16,8 @@ import {CMSServicesComponent} from "./pages/main-services/cms-services/cms-servi
 import {FrontendServicesComponent} from "./pages/main-services/frontend-services/frontend-services.component";
 import {BackendServicesComponent} from "./pages/main-services/backend-services/backend-services.component";
 import {SolutionsComponent} from "./pages/main-solutions/solutions/solutions.component";
+import {SubWebDevelopementComponent} from "./pages/main-services/web-developement/sub-web-developement/sub-web-developement.component";
+import {SubMobileDevelopementComponent} from "./pages/main-services/mobile-app-development/sub-mobile-developement/sub-mobile-developement.component";
 
 
 const routes: Routes = [
@@ -53,6 +55,30 @@ const routes: Routes = [
   { path: 'event-and-ticket-booking-solutions', component: SolutionsComponent },
   { path: 'taxi-booking-app-development', component: SolutionsComponent },
   { path: 'restaurant-app-development', component: SolutionsComponent },
+  { path: 'angular-development', component: SubWebDevelopementComponent },
+  { path: 'reactjs-development', component: SubWebDevelopementComponent },
+  { path: 'vuejs-development', component: SubWebDevelopementComponent },
+  { path: 'flutter-web-development', component: SubWebDevelopementComponent },
+  { path: 'nodejs-development', component: SubWebDevelopementComponent },
+  { path: 'golang-development', component: SubWebDevelopementComponent },
+  { path: 'laravel-development', component: SubWebDevelopementComponent },
+  { path: 'php-development', component: SubWebDevelopementComponent },
+
+
+  { path: 'wordpress-development', component: SubWebDevelopementComponent },
+  { path: 'drupal-development', component: SubWebDevelopementComponent },
+  { path: 'joomla-development', component: SubWebDevelopementComponent },
+  { path: 'dotnetnuke-development', component: SubWebDevelopementComponent },
+  { path: 'magento-development', component: SubWebDevelopementComponent },
+  { path: 'shopify-development', component: SubWebDevelopementComponent },
+  { path: 'woocommerce-development', component: SubWebDevelopementComponent },
+  { path: 'nopcommerce-development', component: SubWebDevelopementComponent },
+
+
+  { path: 'ios-app-development', component: SubMobileDevelopementComponent },
+  { path: 'android-app-development', component: SubMobileDevelopementComponent },
+  { path: 'flutter-app-development', component: SubMobileDevelopementComponent },
+  { path: 'react-native-development', component: SubMobileDevelopementComponent },
 ];
 
 @NgModule({

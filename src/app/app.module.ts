@@ -31,6 +31,8 @@ import { CMSServicesComponent } from './pages/main-services/cms-services/cms-ser
 import { ToolsAndTechComponent } from './common/tools-and-tech/tools-and-tech.component';
 import { HireDeveloperComponent } from './pages/main-developers/hire-developer/hire-developer.component';
 import { SolutionsComponent } from './pages/main-solutions/solutions/solutions.component';
+import { SubWebDevelopementComponent } from './pages/main-services/web-developement/sub-web-developement/sub-web-developement.component';
+import { SubMobileDevelopementComponent } from './pages/main-services/mobile-app-development/sub-mobile-developement/sub-mobile-developement.component';
 
 
 @NgModule({
@@ -63,7 +65,9 @@ import { SolutionsComponent } from './pages/main-solutions/solutions/solutions.c
     CMSServicesComponent,
     ToolsAndTechComponent,
     HireDeveloperComponent,
-    SolutionsComponent
+    SolutionsComponent,
+    SubWebDevelopementComponent,
+    SubMobileDevelopementComponent
   ],
   imports: [
     BrowserModule,
