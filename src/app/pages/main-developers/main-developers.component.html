@@ -13,7 +13,7 @@
           </div>
           <div class="sm-6">
             <div class="service-hero-image"><img
-              src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/hirededecated.webp"
+              src="assets/NewImage/developers.png"
               alt="Hire Dedicated Developers" loading="lazy"></div>
           </div>
         </div>
@@ -1707,76 +1707,54 @@
             <div class="indus-inner-wrap">
               <div class="col-sm-6 indus-images">
                 <div class="indus-images-content">
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/sport.webp" alt="SPORTS"
-                    class="lazyload is-active " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/real-estate.webp" alt="REAL ESTATE"
-                    class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/E-commerce.webp" alt="E-COMMERCE"
-                    class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/travel.webp"
-                    alt="TRAVEL &amp; TOURISM" class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/business-app.webp" alt="BUSINESS APP"
-                    class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/Education.webp" alt="EDUCATION "
-                    class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/MediaEntertainment.webp"
-                    alt="MEDIA &amp; ENTERTAINMENT" class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/Fintech.webp" alt="FINTECH"
-                    class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/healthcare.webp" alt="HEALTHCARE"
-                    class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/fitnesss.webp"
-                    alt="FITNESS &amp; WELLNESS" class="lazyload false " loading="lazy"></div>
-                  <div class="indus-image"><img
-                    data-src="https://s3.ap-south-1.amazonaws.com/techsqueez.com/loginsticx.webp" alt="LOGISTICS"
-                    class="lazyload false " loading="lazy"></div>
+                  <div class="indus-image"><img src="assets/NewImage/sport.jpeg" alt="SPORTS"  [ngClass]="sports ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/realestate.jpeg" alt="REAL ESTATE" [ngClass]="realEstate ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/ecommerce.jpg" alt="E-COMMERCE" [ngClass]="eCommerce ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/travels.jpg" alt="TRAVEL &amp; TOURISM" [ngClass]="travelAndTourism ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/business-app.jpg" alt="BUSINESS APP" [ngClass]="businessApp ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/education.jpg" alt="EDUCATION " [ngClass]="education ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/mediaentertainmet.png" alt="MEDIA &amp; ENTERTAINMENT" [ngClass]="mediaAndEntertainment ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/fintech.jpg" alt="FINTECH" [ngClass]="fintech ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/healthcare.jpg" alt="HEALTHCARE"  [ngClass]="healthCare ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/health-fitness-1.jpg" alt="FITNESS &amp; WELLNESS" [ngClass]="fitnessAndWellNess ? 'is-active' : 'false'" class="lazyload" ></div>
+                  <div class="indus-image"><img src="assets/NewImage/logistic.jpg" alt="LOGISTICS" [ngClass]="logistic ? 'is-active' : 'false'" class="lazyload" ></div>
                 </div>
               </div>
               <div class="col-sm-6 indus-listing">
                 <div class="indus-listing-inner-wrap d-flex-column shadow-box">
                   <div class="indus-listing-inner-wrap-in">
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="active-index">SPORTS</h3></div>
+                      <div class="indus-title"><h3 [ngClass]="sports ? 'active-index' : ''">SPORTS</h3></div>
+                    </div>
+                    <div class="indus-titcle-item">
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('fintech')" (mouseleave)="mouseOutEvent('fintech')"  [ngClass]="fintech ? 'active-index' : ''">FINTECH</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">FINTECH</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('logistic')" (mouseleave)="mouseOutEvent('logistic')"  [ngClass]="logistic ? 'active-index' : ''">LOGISTICS</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">LOGISTICS</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('eCommerce')" (mouseleave)="mouseOutEvent('eCommerce')"  [ngClass]="eCommerce ? 'active-index' : ''">E-COMMERCE</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">E-COMMERCE</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('education')" (mouseleave)="mouseOutEvent('education')"  [ngClass]="education ? 'active-index' : ''">EDUCATION </h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">EDUCATION </h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('healthCare')" (mouseleave)="mouseOutEvent('healthCare')"  [ngClass]="healthCare ? 'active-index' : ''">HEALTHCARE</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">HEALTHCARE</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('realEstate')" (mouseleave)="mouseOutEvent('realEstate')"  [ngClass]="realEstate ? 'active-index' : ''">REAL ESTATE</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">REAL ESTATE</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('businessApp')" (mouseleave)="mouseOutEvent('businessApp')"  [ngClass]="businessApp ? 'active-index' : ''">BUSINESS APP</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">BUSINESS APP</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('travelAndTourism')" (mouseleave)="mouseOutEvent('travelAndTourism')"  [ngClass]="travelAndTourism ? 'active-index' : ''">TRAVEL &amp; TOURISM</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">TRAVEL &amp; TOURISM</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('fitnessAndWellNess')" (mouseleave)="mouseOutEvent('fitnessAndWellNess')"  [ngClass]="fitnessAndWellNess ? 'active-index' : ''">FITNESS &amp; WELLNESS</h3></div>
                     </div>
                     <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">FITNESS &amp; WELLNESS</h3></div>
-                    </div>
-                    <div class="indus-title-item">
-                      <div class="indus-title"><h3 class="">MEDIA &amp; ENTERTAINMENT</h3></div>
+                      <div class="indus-title"><h3 (mouseenter)="mouseEnterEvent('mediaAndEntertainment')" (mouseleave)="mouseOutEvent('mediaAndEntertainment')"  [ngClass]="mediaAndEntertainment ? 'active-index' : ''">MEDIA &amp; ENTERTAINMENT</h3></div>
                     </div>
                   </div>
                 </div>
@@ -2146,42 +2124,5 @@
       </div>
     </div>
   </div>
-  <div class="blogs-wrap">
-    <div class="containerGlobal">
-      <div class="blog-section" style="margin-bottom: 20px;">
-        <div class="sectionStyles_sectionHeadWrap__3NtOT">
-          <div class="sectionStyles_sectionHeadInner__32Qxo"><h2 class=" text-left">Latest Blogs</h2>
-            <div class="primaryButton new-btn"><a routerLink="/blogs">View All Blogs</a></div>
-          </div>
-        </div>
-        <p class="custom-font-18  text-left" style="color: rgb(112, 112, 112);"></p></div>
-      <section class="blogs-list">
-        <div class="blog-item " style="cursor: pointer;">
-          <div class="blog-feature-image"><img
-            data-src="https://techsqueez.com/blogs/wp-content/uploads/2023/04/Top-Fintech-Apps-In-The-Middle-East.jpg"
-            alt="blog-image" class="lazyload"></div>
-          <div class="blog-feature-image-info"><h2>Top 10 Fintech Mobile Apps in Middle East Markets</h2>
-            <div class="excerpt"><p>The rapid developments and advancements in th...</p></div>
-            <a class="simple-link" routerLink="/blogs/top-fintech-apps-in-middle-east"> Read Now</a></div>
-        </div>
-        <div class="blog-item " style="cursor: pointer;">
-          <div class="blog-feature-image"><img
-            data-src="https://techsqueez.com/blogs/wp-content/uploads/2023/04/A-Guide-To-Develop-A-Neobank-App.jpg"
-            alt="blog-image" class="lazyload"></div>
-          <div class="blog-feature-image-info"><h2>How to Develop a Neobank App from Scratch – Features &amp;
-            Cost</h2>
-            <div class="excerpt"><p>The epidemic has significantly changed how pe...</p></div>
-            <a class="simple-link" routerLink="/blogs/develop-neobank-app-ultimate-guide"> Read Now</a></div>
-        </div>
-        <div class="blog-item " style="cursor: pointer;">
-          <div class="blog-feature-image"><img
-            data-src="https://techsqueez.com/blogs/wp-content/uploads/2023/04/What-is-BharOS.jpg" alt="blog-image"
-            class="lazyload"></div>
-          <div class="blog-feature-image-info"><h2>What is BharOS? How it is Different from Android and iOS?</h2>
-            <div class="excerpt"><p>BharOS is India’s indigenous mobile operating...</p></div>
-            <a class="simple-link" routerLink="/blogs/introducing-bharos-operating-system"> Read Now</a></div>
-        </div>
-      </section>
-    </div>
-  </div>
+  
 </main>
