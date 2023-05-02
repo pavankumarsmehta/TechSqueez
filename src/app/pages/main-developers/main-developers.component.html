@@ -689,39 +689,50 @@
           <div class="tab-wrap">
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item" role="presentation">
-                <button type="button" id="controlled-tab-example-tab-mobile" role="tab"
-                        data-rr-ui-event-key="mobile" aria-controls="controlled-tab-example-tabpane-mobile"
-                        aria-selected="true" class="nav-link active">Mobile
-                </button>
+                <button type="button" role="tab" (click)="openTab('mobile')" [ngClass]="isMobile ? 'active' : ''" aria-selected="true" class="nav-link">Mobile</button>
+                <!--
+
+
+                -->
+                <!--<a role="tab" data-rr-ui-event-key="second" id="left-tabs-example-tab-second"
+                   aria-controls="left-tabs-example-tabpane-second" aria-selected="false"
+                   tabindex="-1" class="nav-link">-->
               </li>
               <li class="nav-item" role="presentation">
-                <button type="button" id="controlled-tab-example-tab-front-end" role="tab"
+                <button type="button" role="tab" (click)="openTab('frontEnd')" [ngClass]="isFrontend ? 'active' : ''" aria-selected="true" class="nav-link">Frontend</button>
+
+                <!--<button type="button" id="controlled-tab-example-tab-front-end" role="tab"
                         data-rr-ui-event-key="front-end" aria-controls="controlled-tab-example-tabpane-front-end"
-                        aria-selected="false" tabindex="-1" class="nav-link">Frontend
-                </button>
+                        aria-selected="false" tabindex="-1" class="nav-link">
+                </button>-->
               </li>
               <li class="nav-item" role="presentation">
-                <button type="button" id="controlled-tab-example-tab-back-end" role="tab"
+                <button type="button" role="tab" (click)="openTab('backend')" [ngClass]="isBackend ? 'active' : ''" aria-selected="true" class="nav-link">Backend</button>
+
+                <!--<button type="button" id="controlled-tab-example-tab-back-end" role="tab"
                         data-rr-ui-event-key="back-end" aria-controls="controlled-tab-example-tabpane-back-end"
-                        aria-selected="false" tabindex="-1" class="nav-link">Backend
-                </button>
+                        aria-selected="false" tabindex="-1" class="nav-link">-->
+                <!--</button>-->
               </li>
               <li class="nav-item" role="presentation">
-                <button type="button" id="controlled-tab-example-tab-e-commerce" role="tab"
+                <button type="button" role="tab" (click)="openTab('eCommerce')" [ngClass]="isCMSEcommerce ? 'active' : ''" aria-selected="true" class="nav-link">E-Commerce</button>
+
+                <!--<button type="button" id="controlled-tab-example-tab-e-commerce" role="tab"
                         data-rr-ui-event-key="e-commerce" aria-controls="controlled-tab-example-tabpane-e-commerce"
-                        aria-selected="false" tabindex="-1" class="nav-link">E-Commerce
-                </button>
+                        aria-selected="false" tabindex="-1" class="nav-link">
+                </button>-->
               </li>
               <li class="nav-item" role="presentation">
-                <button type="button" id="controlled-tab-example-tab-ui-design" role="tab"
+                <button type="button" role="tab" (click)="openTab('design')" [ngClass]="isDesign ? 'active' : ''" aria-selected="true" class="nav-link">UI Design</button>
+                <!--<button type="button" id="controlled-tab-example-tab-ui-design" role="tab"
                         data-rr-ui-event-key="ui-design" aria-controls="controlled-tab-example-tabpane-ui-design"
-                        aria-selected="false" tabindex="-1" class="nav-link">UI Design
-                </button>
+                        aria-selected="false" tabindex="-1" class="nav-link">
+                </button>-->
               </li>
             </ul>
             <div class="tab-content">
               <div role="tabpanel" id="controlled-tab-example-tabpane-mobile"
-                   aria-labelledby="controlled-tab-example-tab-mobile" class="fade tab-pane active show">
+                   aria-labelledby="controlled-tab-example-tab-mobile" class="fade tab-pane" [ngClass]="isMobile ? 'active show' : ''">
                 <div class="mobile-wrap">
                   <ul>
                     <li class="style-reset"><a routerLink="/hire-ios-app-developers">
@@ -818,7 +829,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="controlled-tab-example-tabpane-front-end"
-                   aria-labelledby="controlled-tab-example-tab-front-end" class="fade tab-pane">
+                   aria-labelledby="controlled-tab-example-tab-front-end" class="fade tab-pane" [ngClass]="isFrontend ? 'active show' : ''">
                 <div class="mobile-wrap">
                   <ul>
                     <li class="style-reset"><a routerLink="/hire-front-end-developer">
@@ -898,7 +909,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="controlled-tab-example-tabpane-back-end"
-                   aria-labelledby="controlled-tab-example-tab-back-end" class="fade tab-pane">
+                   aria-labelledby="controlled-tab-example-tab-back-end" class="fade tab-pane" [ngClass]="isBackend ? 'active show' : ''">
                 <div class="mobile-wrap">
                   <ul>
                     <li class="style-reset"><a routerLink="/hire-full-stack-developer">
@@ -992,7 +1003,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="controlled-tab-example-tabpane-e-commerce"
-                   aria-labelledby="controlled-tab-example-tab-e-commerce" class="fade tab-pane">
+                   aria-labelledby="controlled-tab-example-tab-e-commerce" class="fade tab-pane" [ngClass]="isCMSEcommerce ? 'active show' : ''">
                 <div class="mobile-wrap">
                   <ul>
                     <li class="style-reset"><a routerLink="/hire-ecommerce-developers">
@@ -1046,7 +1057,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="controlled-tab-example-tabpane-ui-design"
-                   aria-labelledby="controlled-tab-example-tab-ui-design" class="fade tab-pane">
+                   aria-labelledby="controlled-tab-example-tab-ui-design" class="fade tab-pane" [ngClass]="isDesign ? 'active show' : ''">
                 <div class="mobile-wrap">
                   <ul>
                     <li class="style-reset"><a routerLink="/hire-ui-ux-designers">
@@ -1082,33 +1093,24 @@
         <div class="row">
           <div class="col-lg-4 col-md-12 col-sm-12">
             <div class="flex-column tech-tabs nav nav-pills" role="tablist">
-              <div class="nav-item"><a role="tab" data-rr-ui-event-key="first" id="left-tabs-example-tab-first"
-                                       aria-controls="left-tabs-example-tabpane-first" aria-selected="true"
-                                       class="nav-link active">
+              <div class="nav-item">
+                <a type="button" role="tab" (click)="openTab('mobile')" [ngClass]="isMobile ? 'active' : ''" aria-selected="true" class="nav-link">
                 <div class="tab-box"><span>001</span>
                   <h3>Mobile</h3></div>
               </a></div>
-              <div class="nav-item"><a role="tab" data-rr-ui-event-key="second" id="left-tabs-example-tab-second"
-                                       aria-controls="left-tabs-example-tabpane-second" aria-selected="false"
-                                       tabindex="-1" class="nav-link">
+              <div class="nav-item"><a type="button" role="tab" (click)="openTab('frontEnd')" [ngClass]="isFrontend ? 'active' : ''" aria-selected="true" class="nav-link">
                 <div class="tab-box"><span>002</span>
                   <h3>Frontend</h3></div>
               </a></div>
-              <div class="nav-item"><a role="tab" data-rr-ui-event-key="third" id="left-tabs-example-tab-third"
-                                       aria-controls="left-tabs-example-tabpane-third" aria-selected="false"
-                                       tabindex="-1" class="nav-link">
+              <div class="nav-item"><a type="button" role="tab" (click)="openTab('backend')" [ngClass]="isBackend ? 'active' : ''" aria-selected="true" class="nav-link">
                 <div class="tab-box"><span>003</span>
                   <h3>Backend</h3></div>
               </a></div>
-              <div class="nav-item"><a role="tab" data-rr-ui-event-key="fifth" id="left-tabs-example-tab-fifth"
-                                       aria-controls="left-tabs-example-tabpane-fifth" aria-selected="false"
-                                       tabindex="-1" class="nav-link">
+              <div class="nav-item"><a type="button" role="tab" (click)="openTab('eCommerce')" [ngClass]="isCMSEcommerce ? 'active' : ''" aria-selected="true" class="nav-link">
                 <div class="tab-box"><span>004</span>
                   <h3>CMS &amp; Ecommerce</h3></div>
               </a></div>
-              <div class="nav-item"><a role="tab" data-rr-ui-event-key="six" id="left-tabs-example-tab-six"
-                                       aria-controls="left-tabs-example-tabpane-six" aria-selected="false"
-                                       tabindex="-1" class="nav-link">
+              <div class="nav-item"><a type="button" role="tab" (click)="openTab('design')" [ngClass]="isDesign ? 'active' : ''" aria-selected="true" class="nav-link">
                 <div class="tab-box"><span>005</span>
                   <h3>Design</h3></div>
               </a></div>
@@ -1117,7 +1119,7 @@
           <div class="ms-auto col-lg-8 col-md-12 col-sm-12">
             <div class="tech-services tab-content">
               <div role="tabpanel" id="left-tabs-example-tabpane-first"
-                   aria-labelledby="left-tabs-example-tab-first" class="fade tab-pane active show">
+                   aria-labelledby="left-tabs-example-tab-first" class="fade tab-pane"  [ngClass]="isMobile ? 'active show' : ''">
                 <div class="techmain-wholebox">
                   <div class="tech-whole-box" style="width: 33.33%;">
                     <div class="tech-part">
@@ -1279,7 +1281,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="left-tabs-example-tabpane-second"
-                   aria-labelledby="left-tabs-example-tab-second" class="fade tab-pane">
+                   aria-labelledby="left-tabs-example-tab-second" class="fade tab-pane"  [ngClass]="isFrontend ? 'active show' : ''">
                 <div class="techmain-wholebox">
                   <div class="tech-whole-box" style="width: 33.33%;">
                     <div class="tech-part">
@@ -1414,7 +1416,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="left-tabs-example-tabpane-third"
-                   aria-labelledby="left-tabs-example-tab-third" class="fade tab-pane">
+                   aria-labelledby="left-tabs-example-tab-third" class="fade tab-pane"  [ngClass]="isBackend ? 'active show' : ''">
                 <div class="techmain-wholebox">
                   <div class="tech-whole-box" style="width: 33.33%;">
                     <div class="tech-part">
@@ -1572,7 +1574,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="left-tabs-example-tabpane-fifth"
-                   aria-labelledby="left-tabs-example-tab-fifth" class="fade tab-pane">
+                   aria-labelledby="left-tabs-example-tab-fifth" class="fade tab-pane"  [ngClass]="isCMSEcommerce ? 'active show' : ''">
                 <div class="techmain-wholebox">
                   <div class="tech-whole-box" style="width: 50%;">
                     <div class="tech-part">
@@ -1657,7 +1659,7 @@
                 </div>
               </div>
               <div role="tabpanel" id="left-tabs-example-tabpane-six" aria-labelledby="left-tabs-example-tab-six"
-                   class="fade tab-pane">
+                   class="fade tab-pane"  [ngClass]="isDesign ? 'active show' : ''">
                 <div class="techmain-wholebox">
                   <div class="tech-whole-box" style="width: 50%;">
                     <div class="tech-part">

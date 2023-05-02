@@ -11,7 +11,11 @@ export class MainDevelopersComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  isMobile: boolean = true;
+  isFrontend: boolean = false;
+  isBackend: boolean = false;
+  isCMSEcommerce: boolean = false;
+  isDesign: boolean = false;
   sports: boolean = true;
   fintech: boolean = false;
   logistic: boolean = false;
@@ -61,18 +65,44 @@ export class MainDevelopersComponent implements OnInit {
     } else {
       this.sports = true;
     }
+  }
+  openTab(event: any){
+    if (event === 'mobile') {
+      this.isMobile =  true;
+      this.isFrontend =  false;
+      this.isBackend =  false;
+      this.isCMSEcommerce =  false;
+      this.isDesign =  false;
+    }
+    else if (event === 'frontEnd') {
+      this.isMobile =  false;
+      this.isFrontend =  true;
+      this.isBackend =  false;
+      this.isCMSEcommerce =  false;
+      this.isDesign =  false;
+    }
+    else if (event === 'backend') {
+      this.isMobile =  false;
+      this.isFrontend =  false;
+      this.isBackend =  true;
+      this.isCMSEcommerce =  false;
+      this.isDesign =  false;
+    }
+    else if (event === 'eCommerce') {
+      this.isMobile =  false;
+      this.isFrontend =  false;
+      this.isBackend =  false;
+      this.isCMSEcommerce =  true;
+      this.isDesign =  false;
+    }
+    else if (event === 'design') {
+      this.isMobile =  false;
+      this.isFrontend =  false;
+      this.isBackend =  false;
+      this.isCMSEcommerce =  false;
+      this.isDesign =  true;
+    }
 
-
-
-
-
-
-
-
-
-
-    /*this.status = !this.status;
-    console.log('status', this.status)*/
   }
   mouseOutEvent(data: string) {
     this.sports = true;

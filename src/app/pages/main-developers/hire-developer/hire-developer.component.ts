@@ -273,7 +273,7 @@ export class HireDeveloperComponent implements OnInit {
         id: 1,
         question: `What is Flutter app development?`,
         answer: `Flutter is a programming framework that uses dart language. It is an open-source technology and is widely used for cross-platform app development. It is developed and launched by Google and can be used for applications for Android and iOS platforms. It uses a single code base to build native, high-performing applications.`,
-      }, 
+      },
       {
         id: 2,
         question: `What are some of the apps that use Flutter technology?`,
@@ -556,7 +556,7 @@ export class HireDeveloperComponent implements OnInit {
                   }
                 ]
               }
-      
+
             ]
     },
     faqSection: [
@@ -709,7 +709,7 @@ export class HireDeveloperComponent implements OnInit {
       description: `Technology is one of our biggest suites, we specialize in a modern development technology stack for
             software, web, and mobile app development tools and technologies.`,
 
-     
+
             techData: [
               {
                 id: 1,
@@ -846,7 +846,7 @@ export class HireDeveloperComponent implements OnInit {
                   }
                 ]
               }
-      
+
             ]
     },
     faqSection: [
@@ -1144,7 +1144,7 @@ export class HireDeveloperComponent implements OnInit {
                   }
                 ]
               }
-      
+
             ]
     },
     faqSection: [
