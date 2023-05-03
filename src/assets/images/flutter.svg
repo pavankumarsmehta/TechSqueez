@@ -1,14 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-  <g id="Group_39462" data-name="Group 39462" transform="translate(-3496 -2506)">
-    <g id="Group_39457" data-name="Group 39457" transform="translate(0 5)">
-      <rect id="Rectangle_12961" data-name="Rectangle 12961" width="80" height="80" transform="translate(3496 2501)" fill="none"/>
-    </g>
-    <g id="vscode-icons_file-type-flutter" transform="translate(3499.093 2503.713)">
-      <path id="Path_106185" data-name="Path 106185" d="M15.383,24.557l9.768-9.515H49.415L27.921,36.536Z" transform="translate(19.97 24.314)" fill="#40d0fd"/>
-      <path id="Path_106186" data-name="Path 106186" d="M4.907,42.5,17.11,55,69.385,2.287H45.121Z" fill="#41d0fd"/>
-      <path id="Path_106187" data-name="Path 106187" d="M11.176,30.415,23.554,42.61,35.94,30.3,23.4,18.316l-12.227,12.1Z" transform="translate(11.95 30.556)" fill="#1fbcfd"/>
-      <path id="Path_106188" data-name="Path 106188" d="M15.435,34.752,27.821,22.439,49.014,43.872h-24.4l-9.178-9.12Z" transform="translate(20.069 38.413)" fill="#095a9d"/>
-      <path id="Path_106189" data-name="Path 106189" d="M15.435,31.665l11.541-3.839-3.889-3.769-7.652,7.609Z" transform="translate(20.069 41.498)" fill="#0e5199"/>
-    </g>
-  </g>
+<svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.4727 30.8623L31.944 24.5586H48.0189L33.7791 38.7984L25.4727 30.8623Z" fill="#40D0FD"/>
+<path d="M5.30078 26.6411L13.3853 34.9224L48.0175 0H31.9426L5.30078 26.6411Z" fill="#41D0FD"/>
+<path d="M17.3692 38.8789L25.5696 46.9581L33.7753 38.8027L25.4676 30.8633L17.3672 38.8795L17.3692 38.8789Z" fill="#1FBCFD"/>
+<path d="M25.5703 46.9562L33.776 38.7988L47.8164 52.9982H31.6514L25.571 46.9562H25.5703Z" fill="#095A9D"/>
+<path d="M25.5703 46.9563L33.2162 44.413L30.6398 41.916L25.5703 46.957V46.9563Z" fill="#0E5199"/>
 </svg>

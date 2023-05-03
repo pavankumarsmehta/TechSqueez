@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TechSqueezHelperService} from "./services/tech-squeez-helper.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'techSqueez';
+  isMobileOpen : any;
+  constructor(private techSqueezHelperService: TechSqueezHelperService) {
+  }
+  title = 'TechSqueez';
+
+  ngOnInit(){
+    this.techSqueezHelperService.stringSubject.subscribe(
+      data =>
+      {
+        this.isMobileOpen = data;
+
+
+      }
+    );
+  }
 }
