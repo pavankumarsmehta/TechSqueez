@@ -1,5 +1,5 @@
 <div class="header-content">
-  <a href="/">
+  <a routerLink="">
     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="189.981" height="189.953" x="97.519"
          y="192.523" data-layer-role="icon" data-root-id="669235837046" preserveAspectRatio="xMinYMin"
          style="height:36px;width:36px;transition:all 0s ease 0s" viewBox="224.2 223.2 677.5 677.4"><path d="M481.5 755V497.7c0-9.5 7.7-17.2 17.2-17.2s17.1 7.7 17.1 17.2V755c0 53.8 38.2 98.8 89 109.2l5.3.5v-367c0-61.5-50-111.5-111.5-111.5H370c-80.5 0-145.8-65.3-145.8-145.8v-17.2h531.7c80.5 0 145.8 65.3 145.8 145.8 0 9.5-7.7 17.2-17.2 17.2s-17.2-7.7-17.2-17.2c0-61.5-49.9-111.5-111.5-111.5H260.3l.5 5.3c10.4 50.8 55.4 89 109.2 89h128.6c80.5 0 145.8 65.3 145.8 145.8v403h-17.2c-80.4.1-145.7-65.2-145.7-145.6z" class="st0" data-layer-id="6338476137046" style="fill-rule:evenodd;clip-rule:evenodd;fill:#3960fb;fill-opacity:1"/></svg>
@@ -9,27 +9,27 @@
     <div class="mobile-toggle" (click)="openHeaderLinks()"><i></i></div>
     <div class="header-links">
       <ul>
-        <li class=" b-active "><a href="/about-us/">about us</a></li>
-        <li class=""><a href="/solutions/">Solutions</a>
+        <li class=" b-active "><a routerLink="/about-us">about us</a></li>
+        <li class=""><a routerLink="/solutions">Solutions</a>
           <button [ngClass]="isSolution? 'rotate': ''"  class="m-toggle" (click)="toggleMenu('solution')"><span></span></button>
         </li>
         <div class="mobile-sub-menu" [ngClass]="isSolution? 'visible': ''">
           <ul class="mobile-menu-inner-wrap">
-            <li class=""><a href="/hotel-booking-app-development/">&gt; Hotel Booking App</a></li>
-            <li class=""><a href="/salon-and-beauty-app-development/">&gt; Beauty &amp; Salon App</a></li>
-            <li class=""><a href="/digital-wallet-development/">&gt; Digital Wallet App</a></li>
-            <li class=""><a href="/dating-app-development/">&gt; Dating App</a></li>
-            <li class=""><a href="/food-delivery-app-development/">&gt; Food Delivery App</a></li>
-            <li class=""><a href="/taxi-booking-app-development/">&gt; Taxi Booking App</a></li>
-            <li class=""><a href="/on-demand-app-development/">&gt; On-Demand Solution</a></li>
-            <li class=""><a href="/marketplace-app-development/">&gt; Marketplace App</a></li>
-            <li class=""><a href="/elearning-app-development/">&gt; Online eLearning App</a></li>
-            <li class=""><a href="/grocery-delivery-app-development/">&gt; Grocery Delivery App</a></li>
-            <li class=""><a href="/restaurant-app-development/">&gt; Restaurant Booking App</a></li>
-            <li class=""><a href="/event-and-ticket-booking-solutions/">&gt; Event &amp; Ticket Booking</a></li>
+            <li class=""><a routerLink="/hotel-booking-app-development">&gt; Hotel Booking App</a></li>
+            <li class=""><a routerLink="/salon-and-beauty-app-development">&gt; Beauty &amp; Salon App</a></li>
+            <li class=""><a routerLink="/digital-wallet-development">&gt; Digital Wallet App</a></li>
+            <li class=""><a routerLink="/dating-app-development">&gt; Dating App</a></li>
+            <li class=""><a routerLink="/food-delivery-app-development">&gt; Food Delivery App</a></li>
+            <li class=""><a routerLink="/taxi-booking-app-development">&gt; Taxi Booking App</a></li>
+            <li class=""><a routerLink="/on-demand-app-development">&gt; On-Demand Solution</a></li>
+            <li class=""><a routerLink="/marketplace-app-development">&gt; Marketplace App</a></li>
+            <li class=""><a routerLink="/elearning-app-development">&gt; Online eLearning App</a></li>
+            <li class=""><a routerLink="/grocery-delivery-app-development">&gt; Grocery Delivery App</a></li>
+            <li class=""><a routerLink="/restaurant-app-development">&gt; Restaurant Booking App</a></li>
+            <li class=""><a routerLink="/event-and-ticket-booking-solutions">&gt; Event &amp; Ticket Booking</a></li>
           </ul>
         </div>
-        <li class=""><a href="/our-services/">services</a>
+        <li class=""><a routerLink="/our-services">services</a>
           <button [ngClass]="isService? 'rotate': ''"  class="m-toggle" (click)="toggleMenu('service')"><span></span></button>
         </li>
         <!--
@@ -38,60 +38,60 @@
         -->
         <div class="mobile-sub-menu" [ngClass]="isService? 'visible': ''">
           <ul class="mobile-menu-inner-wrap">
-            <li class=""><a href="/mobile-app-development/">&gt; Mobile Application</a>
+            <li class=""><a routerLink="/mobile-app-development">&gt; Mobile Application</a>
               <button class="m-toggle " fdprocessedid="cq60e6"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/ios-app-development/">&gt; iOS App Development</a></li>
-                <li class=""><a href="/android-app-development/">&gt; Android App Development</a></li>
-                <li class=""><a href="/flutter-app-development/">&gt; Flutter App Development</a></li>
-                <li class=""><a href="/react-native-development/">&gt; React-Native Development</a></li>
+                <li class=""><a routerLink="/ios-app-development">&gt; iOS App Development</a></li>
+                <li class=""><a routerLink="/android-app-development">&gt; Android App Development</a></li>
+                <li class=""><a routerLink="/flutter-app-development">&gt; Flutter App Development</a></li>
+                <li class=""><a routerLink="/react-native-development">&gt; React-Native Development</a></li>
               </ul>
             </div>
-            <li class=""><a href="/web-development/">&gt; Web Development</a>
+            <li class=""><a routerLink="/web-development">&gt; Web Development</a>
               <button class="m-toggle " fdprocessedid="jx6swc"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/angular-development/">&gt; Angular Development</a></li>
-                <li class=""><a href="/reactjs-development/">&gt; ReactJS Development</a></li>
-                <li class=""><a href="/vuejs-development/">&gt; VueJS Development</a></li>
-                <li class=""><a href="/nodejs-development/">&gt; NodeJS Development</a></li>
-                <li class=""><a href="/golang-development/">&gt; GoLang Development</a></li>
-                <li class=""><a href="/laravel-development/">&gt; Laravel Development</a></li>
-                <li class=""><a href="/php-development/">&gt; PHP Development</a></li>
-                <li class=""><a href="/wordpress-development/">&gt; WordPress Development</a></li>
+                <li class=""><a routerLink="/angular-development">&gt; Angular Development</a></li>
+                <li class=""><a routerLink="/reactjs-development">&gt; ReactJS Development</a></li>
+                <li class=""><a routerLink="/vuejs-development">&gt; VueJS Development</a></li>
+                <li class=""><a routerLink="/nodejs-development">&gt; NodeJS Development</a></li>
+                <li class=""><a routerLink="/golang-development">&gt; GoLang Development</a></li>
+                <li class=""><a routerLink="/laravel-development">&gt; Laravel Development</a></li>
+                <li class=""><a routerLink="/php-development">&gt; PHP Development</a></li>
+                <li class=""><a routerLink="/wordpress-development">&gt; WordPress Development</a></li>
               </ul>
             </div>
-            <li class=""><a href="/cloud-development-services/">&gt; Cloud Computing</a>
+            <li class=""><a routerLink="/cloud-development-services">&gt; Cloud Computing</a>
               <button class="m-toggle " fdprocessedid="o75cn1"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/aws-development-services/">&gt; AWS</a></li>
-                <li class=""><a href="/devops-solutions/">&gt; DevOps</a></li>
+                <li class=""><a routerLink="/aws-development-services">&gt; AWS</a></li>
+                <li class=""><a routerLink="/devops-solutions">&gt; DevOps</a></li>
                 <li class=""><a> &gt; Kubernet </a></li>
                 <li class=""><a> &gt; Docker </a></li>
               </ul>
             </div>
-            <li class=""><a href="/digital-transformation-services/">&gt; Digital Transformation</a>
+            <li class=""><a routerLink="/digital-transformation-services">&gt; Digital Transformation</a>
               <button class="m-toggle " fdprocessedid="yj3vg3"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/big-data-development-services/">&gt; Big Data</a></li>
-                <li class=""><a href="/artificial-intelligence-development/">&gt; Artificial Intelligence</a></li>
-                <li class=""><a href="/machine-learning-development/">&gt; Machine Learning</a></li>
-                <li class=""><a href="/software-development-services/">&gt; Software Development</a></li>
+                <li class=""><a routerLink="/big-data-development-services">&gt; Big Data</a></li>
+                <li class=""><a routerLink="/artificial-intelligence-development">&gt; Artificial Intelligence</a></li>
+                <li class=""><a routerLink="/machine-learning-development">&gt; Machine Learning</a></li>
+                <li class=""><a routerLink="/software-development-services">&gt; Software Development</a></li>
               </ul>
             </div>
-            <li class=""><a href="/creative-design-services/">&gt; Creative Design</a>
+            <li class=""><a routerLink="/creative-design-services">&gt; Creative Design</a>
               <button class="m-toggle " fdprocessedid="bj3yn8"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/ui-ux-design/">&gt; UI/UX Design</a></li>
+                <li class=""><a routerLink="/ui-ux-design">&gt; UI/UX Design</a></li>
                 <li class=""><a> &gt; Wireframing </a></li>
                 <li class=""><a> &gt; Mobile App Design </a></li>
                 <li class=""><a> &gt; Design Prototyping </a></li>
@@ -99,84 +99,84 @@
             </div>
           </ul>
         </div>
-        <li class=""><a href="/hire-dedicated-developers/">Hire Developers</a>
+        <li class=""><a routerLink="/hire-dedicated-developers">Hire Developers</a>
           <button [ngClass]="isHireDev? 'rotate': ''"  class="m-toggle" (click)="toggleMenu('hireDev')"><span></span></button>
         </li>
         <div class="mobile-sub-menu" [ngClass]="isHireDev? 'visible': ''">
           <ul class="mobile-menu-inner-wrap">
-            <li class=""><a href="/hire-mobile-app-developer/">&gt; Mobile App</a>
+            <li class=""><a routerLink="/hire-mobile-app-developer">&gt; Mobile App</a>
               <button class="m-toggle " fdprocessedid="omeirf"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/hire-ios-app-developers/">&gt; iOS App Developers</a></li>
-                <li class=""><a href="/hire-android-app-developers/">&gt; Android App Developers</a></li>
-                <li class=""><a href="/hire-flutter-app-developers/">&gt; Flutter App Developers</a></li>
-                <li class=""><a href="/hire-react-native-developers/">&gt; React-Native Developers</a></li>
-                <li class=""><a href="/hire-hybrid-mobile-app-developers/">&gt; Hybrid Mobile App Developers</a></li>
+                <li class=""><a routerLink="/hire-ios-app-developers">&gt; iOS App Developers</a></li>
+                <li class=""><a routerLink="/hire-android-app-developers">&gt; Android App Developers</a></li>
+                <li class=""><a routerLink="/hire-flutter-app-developers">&gt; Flutter App Developers</a></li>
+                <li class=""><a routerLink="/hire-react-native-developers">&gt; React-Native Developers</a></li>
+                <li class=""><a routerLink="/hire-hybrid-mobile-app-developers">&gt; Hybrid Mobile App Developers</a></li>
               </ul>
             </div>
-            <li class=""><a href="/hire-backend-developer/">&gt; Backend Developers</a>
+            <li class=""><a routerLink="/hire-backend-developer">&gt; Backend Developers</a>
               <button class="m-toggle " fdprocessedid="p8r5f"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/hire-full-stack-developer/">&gt; Full Stack Developers</a></li>
-                <li class=""><a href="/hire-nodejs-developer/">&gt; NodeJS Developers</a></li>
-                <li class=""><a href="/hire-laravel-developers/">&gt; Laravel Developers</a></li>
-                <li class=""><a href="/hire-golang-developer/">&gt; GoLang Developers</a></li>
-                <li class=""><a href="/hire-php-developers/">&gt; PHP Developers</a></li>
+                <li class=""><a routerLink="/hire-full-stack-developer">&gt; Full Stack Developers</a></li>
+                <li class=""><a routerLink="/hire-nodejs-developer">&gt; NodeJS Developers</a></li>
+                <li class=""><a routerLink="/hire-laravel-developers">&gt; Laravel Developers</a></li>
+                <li class=""><a routerLink="/hire-golang-developer">&gt; GoLang Developers</a></li>
+                <li class=""><a routerLink="/hire-php-developers">&gt; PHP Developers</a></li>
               </ul>
             </div>
-            <li class=""><a href="/hire-front-end-developer/">&gt; Frontend Developers</a>
+            <li class=""><a routerLink="/hire-front-end-developer">&gt; Frontend Developers</a>
               <button class="m-toggle " fdprocessedid="8v6s9m"><span></span></button>
             </li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap">
-                <li class=""><a href="/hire-reactjs-developers/">&gt; ReactJS Developers</a></li>
-                <li class=""><a href="/hire-angularjs-developer/">&gt; Angular Developers</a></li>
-                <li class=""><a href="/hire-vuejs-developer/">&gt; VueJS Developers</a></li>
-                <li class=""><a href="/hire-web-developer/">&gt; Web Developers</a></li>
+                <li class=""><a routerLink="/hire-reactjs-developers">&gt; ReactJS Developers</a></li>
+                <li class=""><a routerLink="/hire-angularjs-developer">&gt; Angular Developers</a></li>
+                <li class=""><a routerLink="/hire-vuejs-developer">&gt; VueJS Developers</a></li>
+                <li class=""><a routerLink="/hire-web-developer">&gt; Web Developers</a></li>
               </ul>
             </div>
-            <li class=""><a href="/hire-wordpress-developers/">&gt; WordPress Developers</a></li>
+            <li class=""><a routerLink="/hire-wordpress-developers">&gt; WordPress Developers</a></li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap"></ul>
             </div>
-            <li class=""><a href="/hire-cms-developers/">&gt; CMS Developers</a></li>
+            <li class=""><a routerLink="/hire-cms-developers">&gt; CMS Developers</a></li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap"></ul>
             </div>
-            <li class=""><a href="/hire-ui-ux-designers/">&gt; UI/UX Designers</a></li>
+            <li class=""><a routerLink="/hire-ui-ux-designers">&gt; UI/UX Designers</a></li>
             <div class="mobile-sub-menu ">
               <ul class="mobile-menu-inner-wrap"></ul>
             </div>
           </ul>
         </div>
-        <li class="active"><a href="/industries/">Industries</a>
+        <li class="active"><a routerLink="/industries">Industries</a>
           <button [ngClass]="isIndustries? 'rotate': ''"  class="m-toggle" (click)="toggleMenu('industries')"><span></span></button>
         </li>
         <div class="mobile-sub-menu" [ngClass]="isIndustries? 'visible': ''">
           <ul class="mobile-menu-inner-wrap">
-            <li class=""><a href="/sports-app-development/">&gt; Sports</a></li>
-            <li class=""><a href="/fintech-app-development/">&gt; Fintech</a></li>
-            <li class=""><a href="/business-application-development/">&gt; Business</a></li>
-            <li class=""><a href="/healthcare-application-development/">&gt; Healthcare </a></li>
-            <li class=""><a href="/ecommerce-development-solutions/">&gt; Ecommerce</a></li>
-            <li class=""><a href="/fitness-and-wellness-app-development/">&gt; Fitness</a></li>
-            <li class=""><a href="/educational-app-development/">&gt; Education</a></li>
-            <li class=""><a href="/transportation-and-logistics-app-development/">&gt; Logistic</a></li>
-            <li class=""><a href="/real-estate-app-development/">&gt; Real Estate</a></li>
-            <li class=""><a href="/ott-platform-development-solutions/">&gt; OTT Platform</a></li>
-            <li class=""><a href="/iot-application-development/">&gt; IoT Development</a></li>
-            <li class=""><a href="/travel-app-development/">&gt; Travel &amp; Tourism</a></li>
-            <li class=""><a href="/electric-vehicle-app-development/">&gt; E-Vehicle</a></li>
-            <li class=""><a href="/social-media-app-development/">&gt; Social Networking</a></li>
-            <li class=""><a href="/media-and-entertainment-app-development/">&gt; Media &amp; Entertainment</a></li>
+            <li class=""><a routerLink="/sports-app-development">&gt; Sports</a></li>
+            <li class=""><a routerLink="/fintech-app-development">&gt; Fintech</a></li>
+            <li class=""><a routerLink="/business-application-development">&gt; Business</a></li>
+            <li class=""><a routerLink="/healthcare-application-development">&gt; Healthcare </a></li>
+            <li class=""><a routerLink="/ecommerce-development-solutions">&gt; Ecommerce</a></li>
+            <li class=""><a routerLink="/fitness-and-wellness-app-development">&gt; Fitness</a></li>
+            <li class=""><a routerLink="/educational-app-development">&gt; Education</a></li>
+            <li class=""><a routerLink="/transportation-and-logistics-app-development">&gt; Logistic</a></li>
+            <li class=""><a routerLink="/real-estate-app-development">&gt; Real Estate</a></li>
+            <li class=""><a routerLink="/ott-platform-development-solutions">&gt; OTT Platform</a></li>
+            <li class=""><a routerLink="/iot-application-development">&gt; IoT Development</a></li>
+            <li class=""><a routerLink="/travel-app-development">&gt; Travel &amp; Tourism</a></li>
+            <li class=""><a routerLink="/electric-vehicle-app-development">&gt; E-Vehicle</a></li>
+            <li class=""><a routerLink="/social-media-app-development">&gt; Social Networking</a></li>
+            <li class=""><a routerLink="/media-and-entertainment-app-development">&gt; Media &amp; Entertainment</a></li>
           </ul>
         </div>
-        <li class=""><a href="/careers/">career</a></li>
-        <li class="color-button"><a href="/contact-us/">contact us</a></li>
+        <li class=""><a routerLink="/careers">career</a></li>
+        <li class="color-button"><a routerLink="/contact-us">contact us</a></li>
       </ul>
     </div>
   </div>
@@ -186,15 +186,15 @@
         <div>Company</div>
         <div class="sub-menu company-submenu">
           <div class="submenu-header">
-            <div class="title "><a href="/about-us/">About Us</a>
+            <div class="title " routerLinkActive="active"><a routerLink="/about-us">About Us</a>
               <p>A hub for innovative software solutions.</p></div>
-            <div class="title "><a href="/careers/"> Career</a>
+            <div class="title " routerLinkActive="active"><a routerLink="/careers"> Career</a>
               <p>Explore thrilling opportunities at TechSqueez!</p></div>
           </div>
           <div class="submenu-footer">
             <div class="footer-heading">Follow Us</div>
             <ul>
-              <li><a target="_black" href="https://twitter.com/multiqos/">
+              <li><a target="_black" routerLink="https://twitter.com/multiqos">
                 <div class="social-box">
                   <div class="icon">
                     <svg width="19" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +205,7 @@
                   </div>
                   <span>Twitter</span></div>
               </a></li>
-              <li><a target="_blank" href="https://www.linkedin.com/company/multiqos/mycompany/">
+              <li><a target="_blank" routerLink="https://www.linkedin.com/company/multiqos/mycompany">
                 <div class="social-box">
                   <div class="icon">
                     <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +216,7 @@
                   </div>
                   <span>Linkedin</span></div>
               </a></li>
-              <li><a target="_blank" href="https://www.facebook.com/MultiQoS/">
+              <li><a target="_blank" routerLink="https://www.facebook.com/MultiQoS">
                 <div class="social-box">
                   <div class="icon">
                     <svg width="9" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -227,7 +227,7 @@
                   </div>
                   <span>Facebook</span></div>
               </a></li>
-              <li><a target="_blank" href="https://dribbble.com/multiqos-tech">
+              <li><a target="_blank" routerLink="https://dribbble.com/multiqos-tech">
                 <div class="social-box">
                   <div class="icon">
                     <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" class="dribble">
@@ -238,7 +238,7 @@
                   </div>
                   <span>Dribbble</span></div>
               </a></li>
-              <li><a target="_blank" href="https://www.instagram.com/multiqos/">
+              <li><a target="_blank" routerLink="https://www.instagram.com/multiqos">
                 <div class="social-box">
                   <div class="icon">
                     <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +252,7 @@
                   </div>
                   <span>Instagram</span></div>
               </a></li>
-              <li><a target="_blank" href="https://www.behance.net/multiqostech">
+              <li><a target="_blank" routerLink="https://www.behance.net/multiqostech">
                 <div class="social-box">
                   <div class="icon">
                     <svg width="17" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,24 +267,24 @@
           </div>
         </div>
       </li>
-      <li (mouseenter)="openMenu('solution')" (mouseleave)="closeMenu()" [ngClass]="isSolution ? 'ismenuopen' : ''"><a
-        href="/solutions/">Solutions</a>
+      <li (mouseenter)="openMenu('solution')" (mouseleave)="closeMenu()" [ngClass]="isSolution ? 'ismenuopen' : ''" routerLinkActive="active">
+        <a routerLink="/solutions">Solutions</a>
         <div class="sub-menu">
           <div class="submenu-header">
             <div class="submenu-list">
               <ul>
-                <li class=""><a href="/hotel-booking-app-development/">Hotel Booking App</a></li>
-                <li class=""><a href="/salon-and-beauty-app-development/">Beauty &amp; Salon App</a></li>
-                <li class=""><a href="/digital-wallet-development/">Digital Wallet App</a></li>
-                <li class=""><a href="/dating-app-development/">Dating App</a></li>
-                <li class=""><a href="/food-delivery-app-development/">Food Delivery App</a></li>
-                <li class=""><a href="/taxi-booking-app-development/">Taxi Booking App</a></li>
-                <li class=""><a href="/on-demand-app-development/">On-Demand Solution</a></li>
-                <li class=""><a href="/marketplace-app-development/">Marketplace App</a></li>
-                <li class=""><a href="/elearning-app-development/">Online eLearning App</a></li>
-                <li class=""><a href="/grocery-delivery-app-development/">Grocery Delivery App</a></li>
-                <li class=""><a href="/restaurant-app-development/">Restaurant Booking App</a></li>
-                <li class=""><a href="/event-and-ticket-booking-solutions/">Event &amp; Ticket Booking</a></li>
+                <li class=""><a routerLink="/hotel-booking-app-development">Hotel Booking App</a></li>
+                <li class=""><a routerLink="/salon-and-beauty-app-development">Beauty &amp; Salon App</a></li>
+                <li class=""><a routerLink="/digital-wallet-development">Digital Wallet App</a></li>
+                <li class=""><a routerLink="/dating-app-development">Dating App</a></li>
+                <li class=""><a routerLink="/food-delivery-app-development">Food Delivery App</a></li>
+                <li class=""><a routerLink="/taxi-booking-app-development">Taxi Booking App</a></li>
+                <li class=""><a routerLink="/on-demand-app-development">On-Demand Solution</a></li>
+                <li class=""><a routerLink="/marketplace-app-development">Marketplace App</a></li>
+                <li class=""><a routerLink="/elearning-app-development">Online eLearning App</a></li>
+                <li class=""><a routerLink="/grocery-delivery-app-development">Grocery Delivery App</a></li>
+                <li class=""><a routerLink="/restaurant-app-development">Restaurant Booking App</a></li>
+                <li class=""><a routerLink="/event-and-ticket-booking-solutions">Event &amp; Ticket Booking</a></li>
               </ul>
             </div>
           </div>
@@ -302,64 +302,64 @@
           </div>
         </div>
       </li>
-      <li (mouseenter)="openMenu('service')" (mouseleave)="closeMenu()" [ngClass]="isService ? 'ismenuopen' : ''"><a
-        href="/our-services/">Services</a>
+      <li (mouseenter)="openMenu('service')" (mouseleave)="closeMenu()" [ngClass]="isService ? 'ismenuopen' : ''" routerLinkActive="active">
+        <a routerLink="/our-services">Services</a>
         <div class="sub-menu large-sub-menu services-menu">
           <div class="submenu-header">
             <div class="submenu-inner-list-wrapper">
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/mobile-app-development/">Mobile Application</a></div>
+                <div class="title "><a routerLink="/mobile-app-development">Mobile Application</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/ios-app-development/">iOS App Development</a></li>
-                    <li class=""><a href="/android-app-development/">Android App Development</a></li>
-                    <li class=""><a href="/flutter-app-development/">Flutter App Development</a></li>
-                    <li class=""><a href="/react-native-development/">React-Native Development</a></li>
+                    <li class=""><a routerLink="/ios-app-development">iOS App Development</a></li>
+                    <li class=""><a routerLink="/android-app-development">Android App Development</a></li>
+                    <li class=""><a routerLink="/flutter-app-development">Flutter App Development</a></li>
+                    <li class=""><a routerLink="/react-native-development">React-Native Development</a></li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/web-development/">Web Development</a></div>
+                <div class="title "><a routerLink="/web-development">Web Development</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/angular-development/">Angular Development</a></li>
-                    <li class=""><a href="/reactjs-development/">ReactJS Development</a></li>
-                    <li class=""><a href="/vuejs-development/"> VueJS Development</a></li>
-                    <li class=""><a href="/nodejs-development/">NodeJS Development</a></li>
-                    <li class=""><a href="/golang-development/">GoLang Development</a></li>
-                    <li class=""><a href="/laravel-development/">Laravel Development</a></li>
-                    <li class=""><a href="/php-development/">PHP Development</a></li>
-                    <li class=""><a href="/wordpress-development/">WordPress Development</a></li>
+                    <li class=""><a routerLink="/angular-development">Angular Development</a></li>
+                    <li class=""><a routerLink="/reactjs-development">ReactJS Development</a></li>
+                    <li class=""><a routerLink="/vuejs-development"> VueJS Development</a></li>
+                    <li class=""><a routerLink="/nodejs-development">NodeJS Development</a></li>
+                    <li class=""><a routerLink="/golang-development">GoLang Development</a></li>
+                    <li class=""><a routerLink="/laravel-development">Laravel Development</a></li>
+                    <li class=""><a routerLink="/php-development">PHP Development</a></li>
+                    <li class=""><a routerLink="/wordpress-development">WordPress Development</a></li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/cloud-development-services/"> Cloud Computing</a></div>
+                <div class="title "><a routerLink="/cloud-development-services"> Cloud Computing</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/aws-development-services/">AWS</a></li>
-                    <li class=""><a href="/devops-solutions/">DevOps</a></li>
+                    <li class=""><a routerLink="/aws-development-services">AWS</a></li>
+                    <li class=""><a routerLink="/devops-solutions">DevOps</a></li>
                     <li class="">Kubernet</li>
                     <li class="">Docker</li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/digital-transformation-services/"> Digital Transformation</a></div>
+                <div class="title "><a routerLink="/digital-transformation-services"> Digital Transformation</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/big-data-development-services/"> Big Data</a></li>
-                    <li class=""><a href="/artificial-intelligence-development/">Artificial Intelligence</a></li>
-                    <li class=""><a href="/machine-learning-development/">Machine Learning</a></li>
-                    <li class=""><a href="/software-development-services/">Software Development</a></li>
+                    <li class=""><a routerLink="/big-data-development-services"> Big Data</a></li>
+                    <li class=""><a routerLink="/artificial-intelligence-development">Artificial Intelligence</a></li>
+                    <li class=""><a routerLink="/machine-learning-development">Machine Learning</a></li>
+                    <li class=""><a routerLink="/software-development-services">Software Development</a></li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/creative-design-services/"> Creative Design</a></div>
+                <div class="title "><a routerLink="/creative-design-services"> Creative Design</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/ui-ux-design/">UI/UX Design</a></li>
+                    <li class=""><a routerLink="/ui-ux-design">UI/UX Design</a></li>
                     <li class="">Wireframing</li>
                     <li class="">Mobile App Design</li>
                     <li class="">Design Prototyping</li>
@@ -382,60 +382,60 @@
           </div>
         </div>
       </li>
-      <li (mouseenter)="openMenu('hireDev')" (mouseleave)="closeMenu()" [ngClass]="isHireDev ? 'ismenuopen' : ''"><a
-        href="/hire-dedicated-developers/">Hire Developers</a>
+      <li (mouseenter)="openMenu('hireDev')" (mouseleave)="closeMenu()" [ngClass]="isHireDev ? 'ismenuopen' : ''" routerLinkActive="active">
+        <a routerLink="/hire-dedicated-developers">Hire Developers</a>
         <div class="sub-menu large-sub-menu">
           <div class="submenu-header">
             <div class="submenu-inner-list-wrapper">
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/hire-mobile-app-developer/">Mobile App</a></div>
+                <div class="title "><a routerLink="/hire-mobile-app-developer">Mobile App</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/hire-ios-app-developers/">iOS App Developers</a></li>
-                    <li class=""><a href="/hire-android-app-developers/">Android App Developers</a></li>
-                    <li class=""><a href="/hire-flutter-app-developers/">Flutter App Developers</a></li>
-                    <li class=""><a href="/hire-react-native-developers/">React-Native Developers</a></li>
-                    <li class=""><a href="/hire-hybrid-mobile-app-developers/">Hybrid Mobile App Developers</a></li>
+                    <li class=""><a routerLink="/hire-ios-app-developers">iOS App Developers</a></li>
+                    <li class=""><a routerLink="/hire-android-app-developers">Android App Developers</a></li>
+                    <li class=""><a routerLink="/hire-flutter-app-developers">Flutter App Developers</a></li>
+                    <li class=""><a routerLink="/hire-react-native-developers">React-Native Developers</a></li>
+                    <li class=""><a routerLink="/hire-hybrid-mobile-app-developers">Hybrid Mobile App Developers</a></li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/hire-backend-developer/">Backend Developers</a></div>
+                <div class="title "><a routerLink="/hire-backend-developer">Backend Developers</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/hire-full-stack-developer/">Full Stack Developers</a></li>
-                    <li class=""><a href="/hire-nodejs-developer/">NodeJS Developers</a></li>
-                    <li class=""><a href="/hire-laravel-developers/">Laravel Developers</a></li>
-                    <li class=""><a href="/hire-golang-developer/">GoLang Developers</a></li>
-                    <li class=""><a href="/hire-php-developers/">PHP Developers</a></li>
+                    <li class=""><a routerLink="/hire-full-stack-developer">Full Stack Developers</a></li>
+                    <li class=""><a routerLink="/hire-nodejs-developer">NodeJS Developers</a></li>
+                    <li class=""><a routerLink="/hire-laravel-developers">Laravel Developers</a></li>
+                    <li class=""><a routerLink="/hire-golang-developer">GoLang Developers</a></li>
+                    <li class=""><a routerLink="/hire-php-developers">PHP Developers</a></li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/hire-front-end-developer/">Frontend Developers</a></div>
+                <div class="title "><a routerLink="/hire-front-end-developer">Frontend Developers</a></div>
                 <div class="submenu-list">
                   <ul>
-                    <li class=""><a href="/hire-reactjs-developers/">ReactJS Developers</a></li>
-                    <li class=""><a href="/hire-angularjs-developer/">Angular Developers</a></li>
-                    <li class=""><a href="/hire-vuejs-developer/">VueJS Developers</a></li>
-                    <li class=""><a href="/hire-web-developer/">Web Developers</a></li>
+                    <li class=""><a routerLink="/hire-reactjs-developers">ReactJS Developers</a></li>
+                    <li class=""><a routerLink="/hire-angularjs-developer">Angular Developers</a></li>
+                    <li class=""><a routerLink="/hire-vuejs-developer">VueJS Developers</a></li>
+                    <li class=""><a routerLink="/hire-web-developer">Web Developers</a></li>
                   </ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/hire-wordpress-developers/">WordPress Developers</a></div>
+                <div class="title "><a routerLink="/hire-wordpress-developers">WordPress Developers</a></div>
                 <div class="submenu-list">
                   <ul></ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/hire-cms-developers/">CMS Developers</a></div>
+                <div class="title "><a routerLink="/hire-cms-developers">CMS Developers</a></div>
                 <div class="submenu-list">
                   <ul></ul>
                 </div>
               </div>
               <div class="submenu-inner-list ">
-                <div class="title "><a href="/hire-ui-ux-designers/">UI/UX Designers</a></div>
+                <div class="title "><a routerLink="/hire-ui-ux-designers">UI/UX Designers</a></div>
                 <div class="submenu-list">
                   <ul></ul>
                 </div>
@@ -456,27 +456,27 @@
           </div>
         </div>
       </li>
-      <li (mouseenter)="openMenu('industries')" (mouseleave)="closeMenu()" [ngClass]="isIndustries ? 'ismenuopen' : ''">
-        <a href="/industries/">Industries</a>
+      <li (mouseenter)="openMenu('industries')" (mouseleave)="closeMenu()" [ngClass]="isIndustries ? 'ismenuopen' : ''" routerLinkActive="active">
+        <a routerLink="/industries">Industries</a>
         <div class="sub-menu">
           <div class="submenu-header">
             <div class="submenu-list">
               <ul>
-                <li class=""><a href="/sports-app-development/">Sports</a></li>
-                <li class=""><a href="/fintech-app-development/">Fintech</a></li>
-                <li class=""><a href="/business-application-development/">Business</a></li>
-                <li class=""><a href="/healthcare-application-development/">Healthcare </a></li>
-                <li class=""><a href="/ecommerce-development-solutions/">Ecommerce</a></li>
-                <li class=""><a href="/fitness-and-wellness-app-development/">Fitness</a></li>
-                <li class=""><a href="/educational-app-development/">Education</a></li>
-                <li class=""><a href="/transportation-and-logistics-app-development/">Logistic</a></li>
-                <li class=""><a href="/real-estate-app-development/">Real Estate</a></li>
-                <li class=""><a href="/ott-platform-development-solutions/">OTT Platform</a></li>
-                <li class=""><a href="/iot-application-development/">IoT Development</a></li>
-                <li class=""><a href="/travel-app-development/">Travel &amp; Tourism</a></li>
-                <li class=""><a href="/electric-vehicle-app-development/">E-Vehicle</a></li>
-                <li class=""><a href="/social-media-app-development/">Social Networking</a></li>
-                <li class=""><a href="/media-and-entertainment-app-development/">Media &amp; Entertainment</a></li>
+                <li class=""><a routerLink="/sports-app-development">Sports</a></li>
+                <li class=""><a routerLink="/fintech-app-development">Fintech</a></li>
+                <li class=""><a routerLink="/business-application-development">Business</a></li>
+                <li class=""><a routerLink="/healthcare-application-development">Healthcare </a></li>
+                <li class=""><a routerLink="/ecommerce-development-solutions">Ecommerce</a></li>
+                <li class=""><a routerLink="/fitness-and-wellness-app-development">Fitness</a></li>
+                <li class=""><a routerLink="/educational-app-development">Education</a></li>
+                <li class=""><a routerLink="/transportation-and-logistics-app-development">Logistic</a></li>
+                <li class=""><a routerLink="/real-estate-app-development">Real Estate</a></li>
+                <li class=""><a routerLink="/ott-platform-development-solutions">OTT Platform</a></li>
+                <li class=""><a routerLink="/iot-application-development">IoT Development</a></li>
+                <li class=""><a routerLink="/travel-app-development">Travel &amp; Tourism</a></li>
+                <li class=""><a routerLink="/electric-vehicle-app-development">E-Vehicle</a></li>
+                <li class=""><a routerLink="/social-media-app-development">Social Networking</a></li>
+                <li class=""><a routerLink="/media-and-entertainment-app-development">Media &amp; Entertainment</a></li>
               </ul>
             </div>
           </div>
@@ -494,7 +494,8 @@
           </div>
         </div>
       </li>
-      <li class=""><a href="/contact-us/">
+      <li class="" routerLinkActive="active">
+        <a routerLink="/contact-us">
         <div class="common-btn">Contact Us
           <svg width="24" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" class="white-right-arrow">
             <path
