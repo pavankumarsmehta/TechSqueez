@@ -29,6 +29,7 @@ export class AppComponent {
   }*/
 
 
+/*
   slides = [
     {img: "assets/img/demo-slide-1.png"},
     {img: "assets/img/demo-slide-2.png"},
@@ -37,11 +38,11 @@ export class AppComponent {
     {img: "assets/img/demo-slide-5.png"}
   ];
   slideConfig = {
-    /*slidesToShow: 3,
+    /!*slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    */
+    *!/
     dots: false,
     centerMode: true,
     centerPadding: '100px',
@@ -99,6 +100,7 @@ export class AppComponent {
   beforeChange(e: any) {
     console.log('beforeChange');
   }
+*/
 
 
   ngOnInit() {
