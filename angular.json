@@ -31,9 +31,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              /*"src/assets/css/banner/bootstrap.min.css",
+              "src/assets/css/banner/magnific-popup.css",
+              "src/assets/css/banner/style.css",
+              "src/assets/css/banner/responsive.css"*/
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
+            ]
           },
           "configurations": {
             "production": {

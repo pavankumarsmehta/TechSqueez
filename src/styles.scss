@@ -2452,6 +2452,9 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none
 }
+.contact-us .title{
+  text-align: left;
+}
 
 @media (prefers-reduced-motion:reduce) {
   .form-select {
@@ -12837,7 +12840,7 @@ input:-webkit-autofill,input:-webkit-autofill:focus,input:-webkit-autofill:hover
 }
 
 .content-list .icon-box {
-  padding: 0 35px;
+  padding: 0 30px;
   color: #fff
 }
 
@@ -12860,7 +12863,8 @@ input:-webkit-autofill,input:-webkit-autofill:focus,input:-webkit-autofill:hover
   width: 100%;
   padding-bottom: 15px;
   color: #fff;
-  font-weight: 300
+  font-weight: 300;
+  border-radius: 0;
 }
 
 .input-wrapper .PhoneInputInput {
@@ -13074,7 +13078,8 @@ textarea {
 }
 
 .hire-image .hire-animation img {
-  max-height: 670px
+  max-height: 1200px
+  //max-height: 670px
 }
 
 .header-fixed header {
@@ -13578,13 +13583,13 @@ textarea {
 
 .count-box .number {
   font-size: 75px;
-  color: #ff174f;
+  color: #b72fb8;
   font-weight: 800
 }
 
 .count-box .content-title {
   font-size: 18px;
-  color: #969696;
+  color: #b72fb8;
   font-weight: 500
 }
 
@@ -13631,9 +13636,8 @@ textarea {
   font-weight: 500;
   width: 30%
 }
-
 .contact-details {
-  display: none
+  text-align: left;
 }
 
 .contact-details div {
@@ -14342,7 +14346,8 @@ textarea {
   position: relative;
   border-radius: 20px;
   display: flex;
-  align-items: center
+  align-items: center;
+  height: 90vh;
 }
 
 .hire-dedicated .hire-content p {
@@ -23225,3 +23230,93 @@ textarea {
   stroke: currentColor;
   stroke-width: 0;
 }
+
+
+/*-------------------------
+    Variables
+-------------------------*/
+:root {
+  // Color
+  --color-primary: #5956E9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-light: #ECF2F6;
+  --color-dark: #27272E;
+  --color-text-dark: #292930;
+  --color-accent1: #FFDC60;
+  --color-accent2: #FAB8C4;
+
+  --color-blue-shade: #6865FF;
+  --color-link: #2522BA;
+  --color-mabel: #DBF8FF;
+  --color-fog: #DBDEFF;
+  --color-pink-shade: #FFD3DB;
+  --color-peach: #FFEDDC;
+  --color-rose: #C75C6F;
+
+  --color-chart1: #896BA7;
+  --color-chart2: #BADEFF;
+
+  --color-body: #525260;
+  --color-gray-1: #757589;
+  --color-gray-2: #999FAE;
+  --color-gray-3: #999AB8;
+  --color-gray-4: #99A1AA;
+  --color-ship-gray: #42424A;
+  --color-ghost: #C7C7D5;
+  --color-mercury: #E5E5E5;
+
+
+  // Gradient Color
+  --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
+  --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
+  --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
+  --gradient-white: linear-gradient(266.3deg, rgba(236, 242, 246, 0) 7.84%, #ECF2F6 29.1%, rgba(236, 242, 246, 0) 64.32%);
+  --gradient-dark: linear-gradient(180deg, #27272E 0%, #303035 100%);
+
+
+
+  // Border
+  --border-light: 1px solid #E3E6E9;
+  --border-lighter: 1px solid #ECF2F6;
+  --border-dark: 1px solid var(--color-ship-gray);
+  --border-gray: 1px solid var(--color-gray-4);
+
+
+  //Font Family
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+  --font-awesome: 'Font Awesome 5 Pro';
+
+  // Transition
+  --transition: all 0.3s ease-in-out;
+
+  //Fonts Size
+  --font-body-1: 18px;
+  --font-body-2: 16px;
+  --font-body-3: 14px;
+  --font-body-4: 12px;
+
+  // Line Height
+  --line-height-b1: 1.5;
+  --line-height-b3: 1.1;
+
+  // Heading Font
+  --h1: 80px;
+  --h2: 64px;
+  --h3: 48px;
+  --h4: 32px;
+  --h5: 24px;
+  --h6: 20px;
+}
+
+// Layouts Variation
+$smlg-device: 'only screen and (max-width: 1199px)';
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';
+

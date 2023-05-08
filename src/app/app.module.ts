@@ -10,6 +10,7 @@ import {TechSqueezHelperService} from "./services/tech-squeez-helper.service";
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CareerComponent } from './pages/career/career.component';
 import { SolutionsComponent } from './pages/solutions/solutions.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SolutionsComponent } from './pages/solutions/solutions.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
   ],
   providers: [TechSqueezHelperService],
   bootstrap: [AppComponent]
