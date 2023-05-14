@@ -1,0 +1,173 @@
+<main class="Layout_main__2sEET ">
+  <section class="ser-hero-section custom-banner">
+    <div class="containerGlobal">
+      <div class="row">
+        <div class="sm-6">
+          <div class="service-head">
+            <h1>{{ activeSection.serviceHead.title }}</h1>
+            <p class="custom-font-18">{{ activeSection.serviceHead.description }}</p>
+            <div class="primaryButton new-btn"><a routerLink="/contact-us">Discuss Your Idea</a>
+            </div>
+          </div>
+        </div>
+        <div class="sm-6">
+          <div class="service-hero-image"><img
+            [src]="activeSection.serviceHead.serviceHeroImage"
+            alt="Hire Full Stack Developers" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="hire-about-section">
+    <div class="containerGlobal">
+      <div class="centerStyles_centerHeadWrap__2tr0Q">
+        <h2 class="">{{ activeSection.hireAboutSection.title }}</h2>
+        <p>{{ activeSection.hireAboutSection.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="why-list-main">
+    <div class="containerGlobal">
+      <div class="centerStyles_centerHeadWrap__2tr0Q">
+        <h2 class="">{{ activeSection.whyListMain.title }}</h2>
+        <p>{{ activeSection.whyListMain.description }}</p>
+      </div>
+      <div class="why-list-inner">
+        <div class="why-icon-container">
+          <img [src]="activeSection.whyListMain.image" alt="" width="86" loading="lazy">
+        </div>
+        <div class="why-list-wrap">
+          <ul class="d-flex flex-wrap">
+            <li class="why-list-item" *ngFor="let reason of activeSection.whyListMain.whyListInner">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21.74" height="21.74" viewBox="0 0 21.74 21.74"
+                   class="why-list-icon">
+                <path fill="#3960fb"
+                      d="M15.675 7.421a.849.849 0 010 1.2l-5.7 5.7a.849.849 0 01-1.2 0l-2.71-2.713a.849.849 0 011.2-1.2l2.112 2.112 5.1-5.1a.849.849 0 011.2 0zm6.065 3.449A10.87 10.87 0 1110.87 0a10.864 10.864 0 0110.87 10.871zm-1.7 0a9.172 9.172 0 10-9.172 9.172 9.167 9.167 0 009.174-9.171zm0 0"></path>
+              </svg> <!-- -->{{ reason.title }}
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hire-services-main">
+    <div class="containerGlobal">
+      <div class="hire-services-title-wrap">
+        <div class="blog-section" style="margin-bottom:20px">
+          <div class="sectionStyles_sectionHeadWrap__3NtOT">
+            <div class="sectionStyles_sectionHeadInner__32Qxo"><h2 class=" text-left">{{ activeSection.hireServiceMain.title }}</h2></div>
+          </div>
+          <p class="custom-font-18  text-left" style="color:#707070">{{ activeSection.hireServiceMain.description }}</p></div>
+      </div>
+      <div class="hire-services-list-main d-flex justify-content-center">
+        <div class="hire-services-section-mockup"><img class="hire-services-section-mockup-image" width="464"
+                                                       [src]="activeSection.hireServiceMain.image"
+                                                       alt="" loading="lazy"></div>
+        <div class="hire-services-section-blocks d-flex ">
+          <ul>
+            <li class="services-item-wrap" *ngFor="let item of activeSection.hireServiceMain.serviceItems">
+              <div class="services-item-wrap-inner"><span>{{item.id}}<!-- -->.</span>{{ item.title }}</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hiring-model">
+    <div class="containerGlobal">
+      <div class="hiring-model-title">
+        <div class="blog-section" style="margin-bottom:20px">
+          <div class="sectionStyles_sectionHeadWrap__3NtOT">
+            <div class="sectionStyles_sectionHeadInner__32Qxo"><h2 class=" text-left">{{ activeSection.hiringModel.title }}</h2></div>
+          </div>
+          <p class="custom-font-18  text-left" style="color:#707070">{{ activeSection.hiringModel.description }}</p></div>
+      </div>
+      <div class="hiring-model-cards">
+        <div class="hiringm-card">
+          <div class="hiringm-card-inner-wrap">
+            <div class="hm-card-title"><img
+              [src]="activeSection.hiringModel.fullTimeImage"
+              alt="Full Time Hiring" loading="lazy">
+              <div class="title-inner"><h4>Full Time Hiring</h4></div>
+              <div class="hm-card-info">
+                <div class="hm-card-info-inner-wrap">
+                  <div class="info-inner"><span>Hours Per Day</span><h6>9 hours/day</h6></div>
+                  <div class="info-inner"><span>Minimun Days</span><h6>2 Weeks</h6></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hiringm-card">
+          <div class="hiringm-card-inner-wrap">
+            <div class="hm-card-title"><img
+              [src]="activeSection.hiringModel.partTimeImage"
+              alt="Part Time Hiring" loading="lazy">
+              <div class="title-inner"><h4>Part Time Hiring</h4></div>
+              <div class="hm-card-info">
+                <div class="hm-card-info-inner-wrap">
+                  <div class="info-inner"><span>Hours Per Day</span><h6>4 hours/day</h6></div>
+                  <div class="info-inner"><span>Minimun Days</span><h6>2 Weeks</h6></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hiringm-card">
+          <div class="hiringm-card-inner-wrap">
+            <div class="hm-card-title"><img
+              [src]="activeSection.hiringModel.hrsImage"
+              alt="Hourly Time Hiring" loading="lazy">
+              <div class="title-inner"><h4>Hourly Time Hiring</h4></div>
+              <div class="hm-card-info">
+                <div class="hm-card-info-inner-wrap">
+                  <div class="info-inner"><span>Hours Per Day</span><h6>Flexible</h6></div>
+                  <div class="info-inner"><span>Minimun Days</span><h6>50 Hours</h6></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="why-cards-main">
+    <div class="containerGlobal">
+      <div class="centerStyles_centerHeadWrap__2tr0Q"><h2 class="">{{ activeSection.whyHireMain.title }}</h2>
+        <p></p></div>
+      <div class="inner-cards-section">
+        <div class="inner-cards-section-wrap d-flex flex-row flex-wrap">
+          <div class="service-card-wrap" *ngFor="let item of activeSection.whyHireMain.serviceCardDetails">
+            <div class="service-card-wrap-content">
+              <img [src]="item.image">
+              <div class="service-card-text"><h4>{{ item.title }}</h4>
+                <p>{{ item.description }}</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <app-tools-and-tech [techData]="activeSection.hireDeveloperByTech"></app-tools-and-tech>
+  <div class="faq-section-main">
+    <div class="containerGlobal">
+      <div class="d-flex flex-column justify-content-center">
+        <div class="centerStyles_centerHeadWrap__2tr0Q"><h2 class="">FAQ</h2>
+          <p></p>
+        </div>
+        <div class="accordion_item" [ngClass]="isClicked ? 'open' : 'close'">
+          <button class="button" (click)="isClicked ? isClicked =false : isClicked=true">Benefits of hiring a full stack developer from TechSqueez?
+            <!-- --> <span class="control">V<!-- --> </span></button>
+          <div class="answer_wrapper">
+            <div class="answer">When you hire a full stack developer, we provide you on-time delivery, a strict
+              non-disclosure agreement, no contract lock-in, and we provide you an opportunity to work with
+              developers with experience and expertise in leading full stack technologies.
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</main>

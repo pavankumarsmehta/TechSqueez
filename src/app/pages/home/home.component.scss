@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+/*body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}*/
+
+.animated-text {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  /* padding-top: 0px; */
+  position: relative;
+  width: 100vh;
+  /* bottom: 16%; */
+  display: block;
+  /*color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;
+  position:fixed;
+  width:100%;
+  bottom:45%;
+  display:block;*/
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+/*#flip > h1 > h1 {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}*/
+#flip > h1 > h1 {
+  color: #fff;
+  /* padding: 11px 8px; */
+  height: 89px;
+  margin-bottom: 91px;
+  display: inline-block;
+}
+
+#flip h1:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip h1 h1 {
+  background:#42c58a;
+}
+#flip h1:first-child h1 {
+  background:#4ec7f3;
+}
+#flip h1:last-child h1 {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  /*position:fixed;*/
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
+
+.animated-text h1,{
+  letter-spacing: 0.975em;
+  font-size: var(--h1);
+  line-height: 1.2;
+}
+
+
+.animated-element {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

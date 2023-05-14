@@ -331,11 +331,7 @@
   </style>
 </head>
 <body [ngClass]="isDark ? 'active-dark-mode' : ''">
-
-<div id="root">
-  <meta name="robots" content="noindex, follow">
-  <meta name="description" content="Creative Agency, Corporate and Portfolio React JS Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<div>
   <div class="my_switcher d-none d-lg-block">
     <button (click)="changeTheme()">
       <span class="setColor dark"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 352 512"
@@ -347,292 +343,101 @@
         d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg></span>
     </button>
   </div>
-  <main class="main-wrapper">
+  <main class="main-wrapper bg-color-light ">
     <app-header></app-header>
+    <div class="section section-padding splash-call-to-action">
     <router-outlet></router-outlet>
-    <!--<header class="header axil-header header-style-1 splash-header-style">
-      <div class="axil-mainmenu axil-sticky">
-        <div class="container">
-          <div class="header-navbar">
-            <div class="header-logo"><a routerLink="">
-              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="189.981" height="189.953" x="97.519"
-                   y="192.523" data-layer-role="icon" data-root-id="669235837046" preserveAspectRatio="xMinYMin"
-                   style="height: 61px; width: 52px;transition:all 0s ease 0s" viewBox="224.2 223.2 677.5 677.4"><path d="M481.5 755V497.7c0-9.5 7.7-17.2 17.2-17.2s17.1 7.7 17.1 17.2V755c0 53.8 38.2 98.8 89 109.2l5.3.5v-367c0-61.5-50-111.5-111.5-111.5H370c-80.5 0-145.8-65.3-145.8-145.8v-17.2h531.7c80.5 0 145.8 65.3 145.8 145.8 0 9.5-7.7 17.2-17.2 17.2s-17.2-7.7-17.2-17.2c0-61.5-49.9-111.5-111.5-111.5H260.3l.5 5.3c10.4 50.8 55.4 89 109.2 89h128.6c80.5 0 145.8 65.3 145.8 145.8v403h-17.2c-80.4.1-145.7-65.2-145.7-145.6z" class="st0" data-layer-id="6338476137046" style="fill-rule:evenodd;clip-rule:evenodd;fill:#3960fb;fill-opacity:1"/></svg>
-              echSqueez
-            </a></div>
-            <div class="header-main-nav">
-              <nav class="mainmenu-nav">
-                <ul class="mainmenu">
-                  <li><a href="https://new.axilthemes.com/demo/react/abstrak/#splash-demo">Demo</a>
-                  </li>
-                  <li>
-                    <a href="https://new.axilthemes.com/demo/react/abstrak/#splsh-features">Features</a>
-                  </li>
-                  <li><a href="https://new.axilthemes.com/demo/react/abstrak/#splash-why-choose">Why
-                    Us</a></li>
-                  <li><a href="https://new.axilthemes.com/docs/abstrak-react/">Documentation</a></li>
-                  <li><a href="https://support.axilthemes.com/support/">Support Ticket</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="header-action">
-              <ul class="list-unstyled">
-                <li class="buy-btn"><a target="_blank" rel="noopener noreferrer"
-                                       href="https://themeforest.net/cart/configure_before_adding/37917149"
-                                       class="axil-btn btn-fill-primary">Buy Now</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>-->
-
-    <!--<section class="banner_area d-flex bg-color-light align-items-center splash-call-to-action" id="apps_craft_animation"
-             style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-      <div class="image_mockup">
-        <ngx-slick-carousel class="carousel"
-                            #slickModal="slick-carousel"
-                            [config]="slideConfig"
-                            (init)="slickInit($event)"
-                            (breakpoint)="breakpoint($event)"
-                            (afterChange)="afterChange($event)"
-                            (beforeChange)="beforeChange($event)">
-          <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-            <a>
-              <img src="{{ slide.img }}" alt="" width="100%" class="custom-slider-class">
-            </a>
-          </div>
-        </ngx-slick-carousel>
-        <div class="one_img wow slideInnew" data-wow-delay="0.2s"
-             style="visibility: visible; animation-delay: 0.2s; animation-name: slideInnew;">
-          <div class="layer layer2">
-
-            &lt;!&ndash;<img src="assets/banner/tablet_04.png" alt=""></div>&ndash;&gt;
-        </div>
-        </div>
-        <div class="one_img wow slideInnew" data-wow-delay="0.4s"
-             style="visibility: visible; animation-delay: 0.4s; animation-name: slideInnew;">
-          <div class="layer layer2" data-depth="0.25"
-               style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(3.06609px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-            <img src="assets/banner/mackbook.png" alt=""></div>
-        </div>
-        <div class="one_img wow slideInnew" data-wow-delay="0.6s"
-             style="visibility: visible; animation-delay: 0.6s; animation-name: slideInnew;">
-          <div class="layer layer2" data-depth="0.6"
-               style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(7.35863px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-            <img src="assets/banner/iphonex1.png" alt=""></div>
-        </div>
-        <div class="one_img wow slideInnew" data-wow-delay="0.8s"
-             style="visibility: visible; animation-delay: 0.8s; animation-name: slideInnew;">
-          <div class="layer layer2" data-depth="0.20"
-               style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(2.45288px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-            <img src="assets/banner/tablet_01.png" alt=""></div>
-        </div>
-        <div class="one_img wow slideInnew" data-wow-delay="0.9s"
-             style="visibility: visible; animation-delay: 0.9s; animation-name: slideInnew;">
-          <div class="layer layer2" data-depth="0.10"
-               style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(1.22644px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-            <img src="assets/banner/tablet_03.png" alt=""></div>
-        </div>
-        <div class="one_img wow slideInnew" data-wow-delay="1s"
-             style="visibility: visible; animation-delay: 1s; animation-name: slideInnew;">
-          <div class="layer layer2" data-depth="0.30"
-               style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(3.67931px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-            <img src="assets/banner/tablet_02.png" alt=""></div>
-        </div>
-        <div class="one_img wow zoomIn" data-wow-delay="0.9s"
-             style="visibility: visible; animation-delay: 0.9s; animation-name: zoomIn;">
-          <div class="layer layer2" data-depth="0.10"
-               style="position: absolute; display: block; left: 0px; top: 0px; transform: translate3d(1.22644px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
-            <img src="assets/banner/circle1.png" alt=""></div>
-        </div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 100, &quot;rotateZ&quot;:0}"
-             style="transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img class="faa-spin animated" src="assets/banner/circle-2.png" alt=""></div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: -180, &quot;y&quot;: 80, &quot;rotateY&quot;:2000}"
-             style="transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0.029deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0.029deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/shape_02.png" alt=""></div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: 250, &quot;y&quot;: 160, &quot;rotateZ&quot;:500}"
-             style="transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/shape_03.png" alt=""></div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: 20, &quot;y&quot;: -100, &quot;rotateZ&quot;:0}"
-             style="transform:translate3d(0.029px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.029px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/shape_04.png" alt=""></div>
-        <div class="one_img"><img src="assets/banner/shape_05.png" alt=""></div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: 0, &quot;y&quot;: 100, &quot;rotateZ&quot;:0}"
-             style="transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/shape_06.png" alt="">
-        </div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: 250, &quot;y&quot;: 360, &quot;rotateZ&quot;:500}"
-             style="transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0.029deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/shape_07.png" alt=""></div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: -180, &quot;y&quot;: 80, &quot;rotateY&quot;:2000}"
-             style="transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0.029deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0.029deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/shape_08.png" alt=""></div>
-        <div class="one_img" data-parallax="{&quot;x&quot;: -10, &quot;y&quot;: 80, &quot;rotateY&quot;:0}"
-             style="transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-          <img src="assets/banner/dot.png" alt="">
-        </div>
-        <ul class="list-unstyled shape-group-20">
-          <li class="shape shape-1"><img src="assets/img/bubble-36.png" alt="Bubble"></li>
-          <li class="shape shape-4"><img src="assets/img/bubble-14.png" alt="Bubble"></li>
-          <li class="shape shape-5"><img src="assets/img/bubble-37.png" alt="Bubble"></li>
-          <li class="shape shape-7"><img src="assets/img/bubble-31.png" alt="Bubble"></li>
-
-
-          <li class="shape shape-90"><img src="assets/images/angular-icon.svg" alt="Bubble"></li>
-          <li class="shape shape-91"><img src="assets/images/golang-icon.svg" alt="Bubble"></li>
-          <li class="shape shape-92"><img src="assets/images/node.svg" alt="Bubble"></li>
-          <li class="shape shape-93"><img src="assets/images/flutter-logo.svg" alt="Bubble"></li>
-          <li class="shape shape-94"><img src="assets/images/android.svg" alt="Bubble"></li>
-          <li class="shape shape-95"><img src="assets/images/figma.svg" alt="Bubble"></li>
-          <li class="shape shape-96"><img src="assets/images/golang-icon.svg" alt="Bubble"></li>
-          <li class="shape shape-97"><img src="assets/images/ae.svg" alt="Bubble"></li>
-          <li class="shape shape-98"><img src="assets/images/ai.svg" alt="Bubble"></li>
-          <li class="shape shape-99"><img src="assets/images/bigdata.svg" alt="Bubble"></li>
-          <li class="shape shape-100"><img src="assets/images/devops.svg" alt="Bubble"></li>
-        </ul>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="banner_text">
-              <h2 class="wow fadeInUp" data-wow-delay="0.2s"
-                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">True eCommerce Theme for
-                <mark><span class="typed">Elec</span><span class="typed-cursor">|</span></mark>
-                store and more.
-              </h2>
-              <p class="wow fadeInUp" data-wow-delay="0.4s"
-                 style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Whatever you’re selling,
-                Kalles is the only Shopify theme you’ll need to build a robust online store that provides a smooth and
-                seamless shopping experience for your consumers. </p>
-              <a href="https://themes.the4.co/kalles-4/#demo" class="dmeo_banner_btn wow fadeInUp scrolls"
-                 data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Explore
-                Kalles</a>
-              <a href="https://shopify.pxf.io/6bQLNQ" class="dmeo_banner_btn dmeo_banner_btn_two wow fadeInUp scrolls"
-                 target="_black" data-wow-delay="0.7s"
-                 style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">Open Store Free</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-    <!--<div class="section splash-main-banner">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="banner-content"><h1 class="title">Creative Agency, Corporate and Portfolio <span>React JS</span>
-              Template + RTL</h1>
-              &lt;!&ndash;<div class="site-element-count">
-                <div class="count-box"><span class="count-title">Demo Website (More Coming)</span>
-                  <div class="count-number h2">
-                    <div><span class="number count"><span>5</span></span></div>
-                    <span class="symbol">+</span></div>
-                </div>
-                <div class="count-box"><span class="count-title">Inner Page</span>
-                  <div class="count-number h2">
-                    <div><span class="number count"><span>30</span></span></div>
-                    <span class="symbol">+</span></div>
-                </div>
-                <div class="count-box"><span class="count-title">Elements</span>
-                  <div class="count-number h2">
-                    <div><span class="number count"><span>30</span></span></div>
-                    <span class="symbol">+</span></div>
-                </div>
-              </div>&ndash;&gt;
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <ul class="list-unstyled shape-group-20">
-        <li class="shape shape-1"><img src="assets/img/bubble-36.png" alt="Bubble"></li>
-        <li class="shape shape-4"><img src="assets/img/bubble-14.png" alt="Bubble"></li>
-        <li class="shape shape-5"><img src="assets/img/bubble-37.png" alt="Bubble"></li>
-        <li class="shape shape-7"><img src="assets/img/bubble-31.png" alt="Bubble"></li>
-
-
-        <li class="shape shape-90"><img src="assets/images/angular-icon.svg" alt="Bubble"></li>
-        <li class="shape shape-91"><img src="assets/images/golang-icon.svg" alt="Bubble"></li>
-        <li class="shape shape-92"><img src="assets/images/node.svg" alt="Bubble"></li>
-        <li class="shape shape-93"><img src="assets/images/flutter-logo.svg" alt="Bubble"></li>
-        <li class="shape shape-94"><img src="assets/images/android.svg" alt="Bubble"></li>
-        <li class="shape shape-95"><img src="assets/images/figma.svg" alt="Bubble"></li>
-        <li class="shape shape-96"><img src="assets/images/golang-icon.svg" alt="Bubble"></li>
-        <li class="shape shape-97"><img src="assets/images/ae.svg" alt="Bubble"></li>
-        <li class="shape shape-98"><img src="assets/images/ai.svg" alt="Bubble"></li>
-        <li class="shape shape-99"><img src="assets/images/bigdata.svg" alt="Bubble"></li>
-        <li class="shape shape-100"><img src="assets/images/devops.svg" alt="Bubble"></li>
+      <ul class="list-unstyled shape-group-9">
+        <li class="shape shape-1"><img src="assets/img/bubble-12.png" alt="Comments"></li>
+        <li class="shape shape-2"><img src="assets/img/bubble-16.png" alt="Comments"></li>
+        <li class="shape shape-3"><img src="assets/img/bubble-13.png" alt="Comments"></li>
+        <li class="shape shape-4"><img src="assets/img/bubble-14.png" alt="Comments"></li>
+        <li class="shape shape-5"><img src="assets/img/bubble-16.png" alt="Comments"></li>
+        <li class="shape shape-6"><img src="assets/img/bubble-15.png" alt="Comments"></li>
+        <li class="shape shape-7"><img src="assets/img/bubble-16.png" alt="Comments"></li>
       </ul>
-    </div>-->
-    <!--<div class="section main-demo-area bg-color-light" id="splash-demo">
-      <div class="container">
-        <div class="section-heading heading-left">
-          <div class="row align-items-center">
-            <div class="col-xl-6 col-lg-7"><h2 class="title">Our templates are just ready to use</h2></div>
-            <div class="col-xl-4 col-lg-5 offset-xl-2"><p>You will love all of the features in our Template.
-              100% guaranteed satisfaction.</p></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="single-demo"><a href="https://new.axilthemes.com/demo/react/abstrak/digital-agency"><span
-              class="thumb"><img src="assets/img/demo-1.png" alt="Digital Agency"></span><h4
-              class="title">Digital Agency</h4></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="single-demo"><a
-              href="https://new.axilthemes.com/demo/react/abstrak/creative-agency"><span
-              class="thumb"><img src="assets/img/demo-2.png" alt="Creative Agency"></span><h4
-              class="title">Creative Agency</h4></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="single-demo"><a
-              href="https://new.axilthemes.com/demo/react/abstrak/personal-portfolio"><span
-              class="thumb"><img src="assets/img/demo-3.png" alt="Personal Portfolio"></span><h4
-              class="title">Personal Portfolio</h4></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="single-demo"><a
-              href="https://new.axilthemes.com/demo/react/abstrak/home-startup"><span
-              class="thumb"><img src="assets/img/demo-4.png" alt="Home Startup"></span><h4
-              class="title">Home Startup</h4></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="single-demo"><a
-              href="https://new.axilthemes.com/demo/react/abstrak/corporate-agency"><span
-              class="thumb"><img src="assets/img/demo-5.png" alt="Corporate Agency"></span><h4
-              class="title">Corporate Agency</h4></a></div>
-          </div>
-          <div class="col-md-6">
-            <div class="single-demo"><a href="https://new.axilthemes.com/demo/react/abstrak/"><span
-              class="thumb"><img src="assets/img/demo-coming.png" alt=""></span><h4
-              class="title"></h4></a></div>
-          </div>
-        </div>
-      </div>
-      <ul class="shape-group list-unstyled">
-        <li class="shape-1"><img src="assets/img/bubble-35.png" alt="Shape"></li>
-        <li class="shape-2"><img src="assets/img/line-4.png" alt="Shape"></li>
-      </ul>
-    </div>-->
-
-    <!--<div class="homepage">-->
-
-
-    <footer class="footer-area splash-footer">
+    </div>
+   <footer class="footer-area splash-footer">
       <div class="container">
         <div class="footer-bottom">
           <div class="row align-items-center">
-            <div class="col-lg-5">
+            <div class="col-lg-4">
               <div class="footer-copyright"><span class="copyright-text">© 2023. All rights reserved by <a
                 href="https://axilthemes.com/">Axilthemes</a>.</span></div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-6">
+
               <ul class="footer-social list-unstyled">
-                <li><a href="https://www.facebook.com/axilthemes">
+                 <li><a target="_black" routerLink="https://twitter.com/multiqos">
+                    <div class="social-box">
+                      <div class="icon">
+                        <svg width="19" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.25 1.892a7.168 7.168 0 0 1-2.062.566A3.6 3.6 0 0 0 17.766.47a7.19 7.19 0 0 1-2.28.872 3.59 3.59 0 0 0-6.118 3.275A10.191 10.191 0 0 1 1.97.866a3.571 3.571 0 0 0-.486 1.805c0 1.245.633 2.344 1.597 2.988a3.579 3.579 0 0 1-1.627-.449v.045c0 1.74 1.239 3.19 2.88 3.521a3.608 3.608 0 0 1-1.621.062 3.595 3.595 0 0 0 3.354 2.493A7.205 7.205 0 0 1 .75 12.818a10.164 10.164 0 0 0 5.503 1.613c6.604 0 10.215-5.47 10.215-10.215 0-.156-.003-.31-.01-.464a7.312 7.312 0 0 0 1.792-1.86Z"
+                                fill="#670DFC"></path>
+                        </svg>
+                      </div>
+                      <span>Twitter</span></div>
+                  </a></li>
+                  <li><a target="_blank" routerLink="https://www.linkedin.com/company/multiqos/mycompany">
+                    <div class="social-box">
+                      <div class="icon">
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.693 2.415c0 .908-.692 1.643-1.773 1.643-1.039 0-1.73-.735-1.709-1.643C.19 1.463.881.75 1.941.75s1.73.713 1.752 1.665ZM.298 15.931V5.356h3.287V15.93H.298ZM6.22 8.73c0-1.32-.044-2.444-.087-3.374h2.854l.152 1.45h.065c.433-.671 1.514-1.687 3.265-1.687 2.162 0 3.784 1.427 3.784 4.54v6.272h-3.286v-5.86c0-1.363-.476-2.292-1.665-2.292-.909 0-1.449.627-1.665 1.232-.087.216-.13.519-.13.822v6.098H6.222V8.73H6.22Z"
+                                fill="#5F1BF8"></path>
+                        </svg>
+                      </div>
+                      <span>Linkedin</span></div>
+                  </a></li>
+                  <li><a target="_blank" routerLink="https://www.facebook.com/MultiQoS">
+                    <div class="social-box">
+                      <div class="icon">
+                        <svg width="9" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.373 3.364a8.606 8.606 0 0 0-1.454-.158c-1.046 0-1.114.454-1.114 1.181v1.295h2.613l-.227 2.682H5.805v8.156H2.533V8.364H.852V5.682h1.681V4.023C2.533 1.751 3.601.48 6.283.48c.93 0 1.612.136 2.498.318l-.408 2.567Z"
+                                fill="#562BF5"></path>
+                        </svg>
+                      </div>
+                      <span>Facebook</span></div>
+                  </a></li>
+                  <li><a target="_blank" routerLink="https://dribbble.com/multiqos-tech">
+                    <div class="social-box">
+                      <div class="icon">
+                        <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" class="dribble">
+                          <path
+                            d="M8.146 6.016C6.79 3.61 5.344 1.648 5.24 1.508A7.838 7.838 0 0 0 .92 6.972c.207.004 3.468.042 7.225-.956ZM6.705.988a.436.436 0 0 0-.001.002l.001-.002ZM13.746 2.713A7.793 7.793 0 0 0 8.578.762a7.85 7.85 0 0 0-1.844.22A39.843 39.843 0 0 1 9.66 5.547c2.953-1.108 4.068-2.803 4.087-2.834ZM9.913 9.868c-4.62 1.61-6.126 4.857-6.14 4.885a7.782 7.782 0 0 0 4.807 1.66 7.78 7.78 0 0 0 3.055-.622c-.115-.684-.571-3.08-1.672-5.94a.507.507 0 0 0-.05.017ZM9.124 8.647c.102-.034.205-.065.307-.094-.195-.446-.41-.89-.635-1.33C4.77 8.429.902 8.34.764 8.338c-.003.082-.006.163-.006.246 0 2.01.758 3.843 2.004 5.23l-.003-.005c0 .002 2.142-3.797 6.365-5.162ZM11.43 9.485c1.027 2.82 1.443 5.116 1.523 5.59a7.832 7.832 0 0 0 3.353-5.249c-.162-.053-2.35-.744-4.876-.341ZM10.266 6.713c.183.373.357.752.52 1.135.06.135.114.27.17.404 2.688-.337 5.336.233 5.448.257a7.782 7.782 0 0 0-1.778-4.892c-.013.02-1.269 1.835-4.36 3.096Z"
+                            fill="#fff"></path>
+                        </svg>
+                      </div>
+                      <span>Dribbble</span></div>
+                  </a></li>
+                  <li><a target="_blank" routerLink="https://www.instagram.com/multiqos">
+                    <div class="social-box">
+                      <div class="icon">
+                        <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M9.672 2.327c2.336 0 2.613.008 3.536.05.853.04 1.316.182 1.624.302.409.159.7.348 1.006.654.307.307.496.598.655 1.006.12.309.262.772.301 1.625.042.923.051 1.2.051 3.536 0 2.336-.009 2.613-.05 3.536-.04.853-.182 1.316-.302 1.625a2.71 2.71 0 0 1-.654 1.005 2.712 2.712 0 0 1-1.007.655c-.308.12-.771.262-1.624.301-.923.042-1.2.051-3.536.051-2.337 0-2.613-.009-3.536-.05-.853-.04-1.316-.182-1.625-.302a2.712 2.712 0 0 1-1.006-.655 2.71 2.71 0 0 1-.654-1.005c-.12-.309-.263-.772-.302-1.625-.042-.923-.05-1.2-.05-3.536 0-2.336.008-2.613.05-3.536.04-.853.182-1.316.302-1.625.158-.408.348-.7.654-1.006a2.71 2.71 0 0 1 1.006-.654c.309-.12.772-.263 1.625-.301.923-.043 1.2-.051 3.536-.051Zm0-1.577c-2.376 0-2.674.01-3.608.053-.931.042-1.567.19-2.124.406a4.29 4.29 0 0 0-1.55 1.01 4.289 4.289 0 0 0-1.009 1.55c-.216.556-.364 1.192-.406 2.123C.932 6.826.922 7.124.922 9.5c0 2.376.01 2.674.053 3.608.042.93.19 1.567.406 2.123a4.29 4.29 0 0 0 1.01 1.55 4.29 4.29 0 0 0 1.55 1.01c.556.216 1.192.364 2.123.406.934.043 1.232.053 3.608.053 2.376 0 2.674-.01 3.607-.053.932-.042 1.568-.19 2.124-.406a4.29 4.29 0 0 0 1.55-1.01 4.29 4.29 0 0 0 1.01-1.55c.216-.556.364-1.192.406-2.123.043-.934.053-1.232.053-3.608 0-2.376-.01-2.674-.053-3.608-.042-.931-.19-1.567-.407-2.124a4.29 4.29 0 0 0-1.009-1.55 4.29 4.29 0 0 0-1.55-1.009C14.848.993 14.211.845 13.28.803 12.346.76 12.048.75 9.671.75Z"
+                            fill="#395FE8"></path>
+                          <path
+                            d="M9.673 5.012a4.493 4.493 0 1 0 0 8.986 4.493 4.493 0 0 0 0-8.986Zm0 7.41a2.917 2.917 0 1 1 0-5.834 2.917 2.917 0 0 1 0 5.834ZM15.397 4.831a1.05 1.05 0 1 1-2.1 0 1.05 1.05 0 0 1 2.1 0Z"
+                            fill="#395FE8"></path>
+                        </svg>
+                      </div>
+                      <span>Instagram</span></div>
+                  </a></li>
+                  <li><a target="_blank" routerLink="https://www.behance.net/multiqostech">
+                    <div class="social-box">
+                      <div class="icon">
+                        <svg width="17" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M6.994 4.803c.353-.177.62-.375.802-.589.326-.384.486-.894.486-1.527 0-.615-.16-1.14-.481-1.582C7.265.387 6.359.02 5.077 0H0v10.364h4.734c.533 0 1.028-.046 1.484-.14a2.92 2.92 0 0 0 1.187-.52c.298-.22.547-.493.744-.815a2.994 2.994 0 0 0 .469-1.653c0-.595-.137-1.101-.41-1.518-.274-.417-.678-.722-1.214-.915ZM2.094 1.8h2.287c.503 0 .917.054 1.242.162.377.156.565.474.565.958 0 .435-.144.739-.428.91-.285.17-.656.257-1.111.257H2.094V1.8Zm3.617 6.583c-.253.122-.61.183-1.065.183H2.094V5.802h2.587c.45.003.801.063 1.052.174.446.202.668.572.668 1.113 0 .637-.23 1.067-.69 1.294ZM15.37.484h-4.503v1.29h4.502V.484ZM16.926 5.577c-.093-.6-.3-1.128-.62-1.584a3.129 3.129 0 0 0-1.342-1.134c-.54-.24-1.15-.36-1.827-.359-1.138 0-2.063.356-2.778 1.063-.713.708-1.07 1.727-1.07 3.056 0 1.416.394 2.44 1.187 3.068.79.629 1.701.942 2.736.942 1.253 0 2.228-.373 2.924-1.117.445-.47.697-.932.752-1.385h-2.074c-.12.224-.26.4-.419.527-.29.233-.665.35-1.126.35-.44 0-.811-.096-1.121-.289-.513-.308-.78-.848-.814-1.616h5.66c.009-.662-.013-1.171-.068-1.522Zm-5.541.2c.074-.5.255-.895.542-1.187.286-.291.692-.438 1.212-.439.48 0 .88.137 1.206.413.322.277.504.68.54 1.212h-3.5Z"
+                            fill="#3960E8"></path>
+                        </svg>
+                      </div>
+                      <span>Behance</span></div>
+                  </a></li>
+                                <!--<li><a href="https://www.facebook.com/axilthemes">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0"
                        viewBox="0 0 320 512" height="1em" width="1em"
                        xmlns="http://www.w3.org/2000/svg">
@@ -647,10 +452,10 @@
                     <path
                       d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
                   </svg>
-                </a></li>
+                </a></li>-->
               </ul>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-2">
               <div class="footer-bottom-link">
                 <ul class="list-unstyled">
                   <li><a href="https://themeforest.net/user/axilthemes/portfolio">More Themes</a></li>

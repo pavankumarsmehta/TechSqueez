@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 /*import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';*/
 import { FooterComponent } from "./navigation/footer/footer.component";
@@ -19,6 +20,19 @@ import { TechnologyComponent } from './pages/home/technology/technology.componen
 import { HiringComponent } from './pages/home/hiring/hiring.component';
 import { SolutionsComponent } from "./pages/solutions/solutions.component";
 import {TechSqueezHelperService} from "./services/tech-squeez-helper.service";
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import {ToolsAndTechComponent} from "./common/tools-and-tech/tools-and-tech.component";
+import { MainAboutUsComponent } from "./pages/main-about-us/main-about-us.component";
+import { MainCareerComponent } from "./pages/main-career/main-career.component";
+import { MainContactUsComponent } from "./pages/main-contact-us/main-contact-us.component";
+import { MainDevelopersComponent } from "./pages/main-developers/main-developers.component";
+import { MainIndustriesComponent } from "./pages/main-industries/main-industries.component";
+import { MainServicesComponent} from "./pages/main-services/main-services.component";
+import {HireDeveloperComponent} from "./pages/main-developers/hire-developer/hire-developer.component";
+import {SubWebDevelopementComponent} from "./pages/main-services/web-developement/sub-web-developement/sub-web-developement.component";
+import {SubMobileDevelopementComponent} from "./pages/main-services/mobile-app-development/sub-mobile-developement/sub-mobile-developement.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {CommonModule} from "@angular/common";
 
 
 @NgModule({
@@ -36,11 +50,25 @@ import {TechSqueezHelperService} from "./services/tech-squeez-helper.service";
     TalkToExpertsComponent,
     TechnologyComponent,
     HiringComponent,
-    SolutionsComponent
+    SolutionsComponent,
+    ToolsAndTechComponent,
+    MainAboutUsComponent,
+    MainCareerComponent,
+    MainContactUsComponent,
+    MainDevelopersComponent,
+    MainIndustriesComponent,
+    MainServicesComponent,
+    HireDeveloperComponent,
+    SubWebDevelopementComponent,
+    SubMobileDevelopementComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SlickCarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [TechSqueezHelperService],
   bootstrap: [AppComponent]
